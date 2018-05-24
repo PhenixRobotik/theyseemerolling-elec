@@ -1,5 +1,8 @@
 # Électronique pour "They see me rolling",  la base roulante de PhenixRobotik.
 
+<div class="alert alert-success">
+    This project requires KiCAD 5.0 and is not compatible with previous versions (software and libraries).
+</div>
 
 * Stm32f3 (?)
   * Voltage instrumentation (power, digital)
