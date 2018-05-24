@@ -1,6 +1,6 @@
 # Électronique pour "They see me rolling",  la base roulante de PhenixRobotik.
 
-<div class="alert alert-success">
+<div class="alert alert-warning">
     This project requires KiCAD 5.0 and is not compatible with previous versions (software and libraries).
 </div>
 
