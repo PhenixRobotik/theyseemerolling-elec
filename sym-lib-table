@@ -1,4 +1,4 @@
 (sym_lib_table
-  (lib (name tsop)(type Legacy)(uri ${KIPRJMOD}/lib/tsop.lib)(options "")(descr ""))
-  (lib (name st-microelectronics)(type Legacy)(uri ${KIPRJMOD}/lib/st-microelectronics.lib)(options "")(descr ""))
+  (lib (name tsop)(type Legacy)(uri ${KIPRJMOD}/phenix_kicad/library/tsop.lib)(options "")(descr ""))
+  (lib (name st-microelectronics)(type Legacy)(uri ${KIPRJMOD}/phenix_kicad/library/st-microelectronics.lib)(options "")(descr ""))
 )
