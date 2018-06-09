@@ -27,6 +27,10 @@ F6 "EN_A" I L 7600 2450 50
 F7 "IN1_B" I L 7600 2700 50 
 F8 "IN2_B" I L 7600 2800 50 
 F9 "EN_B" I L 7600 2900 50 
+F10 "M1+" I R 9900 2100 50 
+F11 "M1-" I R 9900 2200 50 
+F12 "M2+" I R 9900 2400 50 
+F13 "M2-" I R 9900 2500 50 
 $EndSheet
 $Comp
 L Connector_Generic:Conn_01x02 J1
@@ -60,5 +64,27 @@ F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7400 2800 50 
 F 3 "~" H 7400 2800 50  0001 C CNN
 	1    7400 2800
 	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J4
+U 1 1 5B1C2A3B
+P 10100 2100
+F 0 "J4" H 10020 1775 50  0000 C CNN
+F 1 "Conn_01x02" H 10020 1866 50  0000 C CNN
+F 2 "Connector_Phoenix_MC:PhoenixContact_MC_1,5_2-G-3.81_1x02_P3.81mm_Horizontal" H 10100 2100 50  0001 C CNN
+F 3 "~" H 10100 2100 50  0001 C CNN
+	1    10100 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J5
+U 1 1 5B1C2AB3
+P 10100 2400
+F 0 "J5" H 10020 2075 50  0000 C CNN
+F 1 "Conn_01x02" H 10020 2166 50  0000 C CNN
+F 2 "Connector_Phoenix_MC:PhoenixContact_MC_1,5_2-G-3.81_1x02_P3.81mm_Horizontal" H 10100 2400 50  0001 C CNN
+F 3 "~" H 10100 2400 50  0001 C CNN
+	1    10100 2400
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
