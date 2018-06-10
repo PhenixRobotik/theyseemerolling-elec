@@ -40,7 +40,7 @@
 * Architecture:
     * One single PCB card
     * One motor driver card (speed + torque control) + one position (+ odometrie ?) card ( = carte kiwi ?)
-    * Two motor driver card (speed + torque control) + one position (+ odometrie ?) card ( = carte kiwi ?)
+    * Two motor driver cards (speed + torque control) + one position (+ odometrie ?) card ( = carte kiwi ?)
 
 ## Eventually :
 
