@@ -1,10 +1,9 @@
 EESchema Schematic File Version 4
-LIBS:theyseemerolling-elec-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 2
+Sheet 2 4
 Title ""
 Date ""
 Rev ""
@@ -117,9 +116,6 @@ Wire Wire Line
 Wire Wire Line
 	6550 2800 6750 2800
 Connection ~ 6750 2800
-Wire Wire Line
-	6550 2800 6350 2800
-Connection ~ 6550 2800
 $Comp
 L Device:R R9
 U 1 1 5B0AEE78
@@ -285,13 +281,166 @@ Wire Wire Line
 	6050 3200 8050 3200
 Wire Wire Line
 	6050 3100 8050 3100
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5B1E48FC
+P 9900 3850
+F 0 "#PWR?" H 9900 3700 50  0001 C CNN
+F 1 "+3.3V" V 9915 3978 50  0000 L CNN
+F 2 "" H 9900 3850 50  0001 C CNN
+F 3 "" H 9900 3850 50  0001 C CNN
+	1    9900 3850
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5B1E6763
+P 9350 4800
+F 0 "#PWR?" H 9350 4550 50  0001 C CNN
+F 1 "GND" H 9355 4627 50  0000 C CNN
+F 2 "" H 9350 4800 50  0001 C CNN
+F 3 "" H 9350 4800 50  0001 C CNN
+	1    9350 4800
+	1    0    0    -1  
+$EndComp
+Text HLabel 8550 4500 0    50   Input ~ 0
+PowerGND
+Text HLabel 9950 4300 2    50   Input ~ 0
+Sense_B
 Wire Wire Line
-	6350 2800 6350 3300
+	6050 3800 8400 3800
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5B1EB34F
+P 10050 2550
+F 0 "#PWR?" H 10050 2400 50  0001 C CNN
+F 1 "+3.3V" V 10065 2678 50  0000 L CNN
+F 2 "" H 10050 2550 50  0001 C CNN
+F 3 "" H 10050 2550 50  0001 C CNN
+	1    10050 2550
+	0    1    1    0   
+$EndComp
+Text HLabel 8800 3450 0    50   Input ~ 0
+PowerGND
+Text HLabel 10000 3100 2    50   Input ~ 0
+Sense_A
+$Comp
+L power:GND #PWR?
+U 1 1 5B1EE9DD
+P 9500 3600
+F 0 "#PWR?" H 9500 3350 50  0001 C CNN
+F 1 "GND" V 9505 3472 50  0000 R CNN
+F 2 "" H 9500 3600 50  0001 C CNN
+F 3 "" H 9500 3600 50  0001 C CNN
+	1    9500 3600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Sensor_Current:ACS711xLCTR-12AB U?
+U 1 1 5B1EFDF7
+P 9400 3100
+F 0 "U?" H 9400 3678 50  0000 C CNN
+F 1 "ACS711xLCTR-12AB" H 9400 3587 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 9750 3050 50  0001 L CIN
+F 3 "http://www.allegromicro.com/~/Media/Files/Datasheets/ACS711-Datasheet.ashx" H 9400 3100 50  0001 C CNN
+	1    9400 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Sensor_Current:ACS711xLCTR-12AB U?
+U 1 1 5B1EFF44
+P 9350 4300
+F 0 "U?" H 9350 4878 50  0000 C CNN
+F 1 "ACS711xLCTR-12AB" H 9350 4787 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 9700 4250 50  0001 L CIN
+F 3 "http://www.allegromicro.com/~/Media/Files/Datasheets/ACS711-Datasheet.ashx" H 9350 4300 50  0001 C CNN
+	1    9350 4300
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	6050 3300 6350 3300
-Connection ~ 6350 3300
+	8950 4100 8400 4100
 Wire Wire Line
-	6350 3300 6350 3800
+	8400 4100 8400 3800
 Wire Wire Line
-	6050 3800 6350 3800
+	8550 4500 8950 4500
+Wire Wire Line
+	9350 4800 9350 4700
+Wire Wire Line
+	9750 4300 9950 4300
+$Comp
+L Device:R R?
+U 1 1 5B1F3137
+P 9850 4200
+F 0 "R?" H 9920 4246 50  0000 L CNN
+F 1 "10kR" H 9920 4155 50  0000 L CNN
+F 2 "" V 9780 4200 50  0001 C CNN
+F 3 "~" H 9850 4200 50  0001 C CNN
+	1    9850 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9350 3850 9850 3850
+Wire Wire Line
+	9850 3850 9850 4050
+Wire Wire Line
+	9350 3850 9350 3900
+Wire Wire Line
+	9850 4350 9850 4400
+Wire Wire Line
+	9850 4400 9750 4400
+Text HLabel 9950 4400 2    50   Input ~ 0
+Sense_B_Fault
+Wire Wire Line
+	9950 4400 9850 4400
+Connection ~ 9850 4400
+Wire Wire Line
+	9900 3850 9850 3850
+Connection ~ 9850 3850
+Wire Wire Line
+	9400 3500 9400 3600
+Wire Wire Line
+	9400 3600 9500 3600
+Wire Wire Line
+	9400 2700 9400 2550
+Wire Wire Line
+	9400 2550 9900 2550
+Wire Wire Line
+	9800 3100 10000 3100
+$Comp
+L Device:R R?
+U 1 1 5B1FA146
+P 9900 3000
+F 0 "R?" H 9970 3046 50  0000 L CNN
+F 1 "10kR" H 9970 2955 50  0000 L CNN
+F 2 "" V 9830 3000 50  0001 C CNN
+F 3 "~" H 9900 3000 50  0001 C CNN
+	1    9900 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9900 2850 9900 2550
+Connection ~ 9900 2550
+Wire Wire Line
+	9900 2550 10050 2550
+Wire Wire Line
+	9800 3200 9900 3200
+Wire Wire Line
+	9900 3200 9900 3150
+Text HLabel 10000 3200 2    50   Input ~ 0
+Sense_A_Fault
+Wire Wire Line
+	9900 3200 10000 3200
+Connection ~ 9900 3200
+Wire Wire Line
+	6050 3300 8700 3300
+Wire Wire Line
+	8700 3300 8700 2900
+Wire Wire Line
+	8700 2900 9000 2900
+Wire Wire Line
+	8800 3450 8900 3450
+Wire Wire Line
+	8900 3450 8900 3300
+Wire Wire Line
+	8900 3300 9000 3300
 $EndSCHEMATC

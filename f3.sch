@@ -1,0 +1,272 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_ST_STM32F3:STM32F303K8Tx U1
+U 1 1 5B1D340A
+P 5450 2750
+F 0 "U1" H 5400 1664 50  0000 C CNN
+F 1 "STM32F303K8Tx" H 5400 1573 50  0000 C CNN
+F 2 "Package_QFP:LQFP-32_7x7mm_P0.8mm" H 4950 1850 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00092070.pdf" H 5450 2750 50  0001 C CNN
+	1    5450 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0111
+U 1 1 5B1D354F
+P 5550 1150
+F 0 "#PWR0111" H 5550 1000 50  0001 C CNN
+F 1 "+3.3V" H 5565 1323 50  0000 C CNN
+F 2 "" H 5550 1150 50  0001 C CNN
+F 3 "" H 5550 1150 50  0001 C CNN
+	1    5550 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5B1D35DD
+P 5100 1700
+F 0 "C2" V 4848 1700 50  0000 C CNN
+F 1 "C" V 4939 1700 50  0000 C CNN
+F 2 "" H 5138 1550 50  0001 C CNN
+F 3 "~" H 5100 1700 50  0001 C CNN
+	1    5100 1700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 5B1D364E
+P 5300 1550
+F 0 "C3" V 5048 1550 50  0000 C CNN
+F 1 "C" V 5139 1550 50  0000 C CNN
+F 2 "" H 5338 1400 50  0001 C CNN
+F 3 "~" H 5300 1550 50  0001 C CNN
+	1    5300 1550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 5B1D368B
+P 5400 1400
+F 0 "C4" V 5148 1400 50  0000 C CNN
+F 1 "C" V 5239 1400 50  0000 C CNN
+F 2 "" H 5438 1250 50  0001 C CNN
+F 3 "~" H 5400 1400 50  0001 C CNN
+	1    5400 1400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5550 1150 5550 1400
+Wire Wire Line
+	5550 1400 5550 1550
+Wire Wire Line
+	5550 1550 5450 1550
+Connection ~ 5550 1400
+Connection ~ 5550 1550
+$Comp
+L power:GND #PWR0112
+U 1 1 5B1D3885
+P 4850 1700
+F 0 "#PWR0112" H 4850 1450 50  0001 C CNN
+F 1 "GND" V 4855 1572 50  0000 R CNN
+F 2 "" H 4850 1700 50  0001 C CNN
+F 3 "" H 4850 1700 50  0001 C CNN
+	1    4850 1700
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0113
+U 1 1 5B1D38FD
+P 4850 1400
+F 0 "#PWR0113" H 4850 1150 50  0001 C CNN
+F 1 "GND" V 4855 1272 50  0000 R CNN
+F 2 "" H 4850 1400 50  0001 C CNN
+F 3 "" H 4850 1400 50  0001 C CNN
+	1    4850 1400
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0114
+U 1 1 5B1D3910
+P 4850 1550
+F 0 "#PWR0114" H 4850 1300 50  0001 C CNN
+F 1 "GND" V 4855 1422 50  0000 R CNN
+F 2 "" H 4850 1550 50  0001 C CNN
+F 3 "" H 4850 1550 50  0001 C CNN
+	1    4850 1550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4850 1400 5250 1400
+Wire Wire Line
+	4850 1550 5150 1550
+Wire Wire Line
+	5550 1550 5550 1700
+Wire Wire Line
+	4850 1700 4950 1700
+Wire Wire Line
+	5250 1700 5350 1700
+Wire Wire Line
+	5350 1700 5350 1850
+Wire Wire Line
+	5350 1700 5450 1700
+Wire Wire Line
+	5450 1700 5450 1850
+Connection ~ 5350 1700
+Wire Wire Line
+	5450 1700 5550 1700
+Connection ~ 5450 1700
+Connection ~ 5550 1700
+Wire Wire Line
+	5550 1700 5550 1850
+$Comp
+L power:GND #PWR0115
+U 1 1 5B1D3D80
+P 5350 4050
+F 0 "#PWR0115" H 5350 3800 50  0001 C CNN
+F 1 "GND" H 5355 3877 50  0000 C CNN
+F 2 "" H 5350 4050 50  0001 C CNN
+F 3 "" H 5350 4050 50  0001 C CNN
+	1    5350 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 4050 5350 3850
+Wire Wire Line
+	5450 3750 5450 3850
+Wire Wire Line
+	5450 3850 5350 3850
+Connection ~ 5350 3850
+Wire Wire Line
+	5350 3850 5350 3750
+$Comp
+L Device:R R1
+U 1 1 5B1D4345
+P 3500 2250
+F 0 "R1" V 3293 2250 50  0000 C CNN
+F 1 "10kR" V 3384 2250 50  0000 C CNN
+F 2 "" V 3430 2250 50  0001 C CNN
+F 3 "~" H 3500 2250 50  0001 C CNN
+	1    3500 2250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Jumper_NC_Dual JP1
+U 1 1 5B1D4443
+P 3000 2250
+F 0 "JP1" V 3046 2352 50  0000 L CNN
+F 1 "Jumper_NC_Dual" V 2955 2352 50  0000 L CNN
+F 2 "" H 3000 2250 50  0001 C CNN
+F 3 "~" H 3000 2250 50  0001 C CNN
+	1    3000 2250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0116
+U 1 1 5B1D4573
+P 3000 2600
+F 0 "#PWR0116" H 3000 2350 50  0001 C CNN
+F 1 "GND" H 3005 2427 50  0000 C CNN
+F 2 "" H 3000 2600 50  0001 C CNN
+F 3 "" H 3000 2600 50  0001 C CNN
+	1    3000 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0117
+U 1 1 5B1D45ED
+P 3000 1900
+F 0 "#PWR0117" H 3000 1750 50  0001 C CNN
+F 1 "+3.3V" H 3015 2073 50  0000 C CNN
+F 2 "" H 3000 1900 50  0001 C CNN
+F 3 "" H 3000 1900 50  0001 C CNN
+	1    3000 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 1900 3000 2000
+Wire Wire Line
+	3000 2600 3000 2500
+Wire Wire Line
+	3650 2250 4850 2250
+Wire Wire Line
+	3100 2250 3350 2250
+Wire Wire Line
+	5950 3350 6250 3350
+Wire Wire Line
+	5950 3450 6250 3450
+Text HLabel 6250 3350 2    50   Input ~ 0
+swdio
+Text HLabel 6250 3450 2    50   Input ~ 0
+swclk
+Text HLabel 4250 2050 0    50   Input ~ 0
+nrst
+Wire Wire Line
+	4250 2050 4400 2050
+$Comp
+L Device:C C1
+U 1 1 5B1D63C9
+P 4400 1850
+F 0 "C1" H 4515 1896 50  0000 L CNN
+F 1 "100nC" H 4515 1805 50  0000 L CNN
+F 2 "" H 4438 1700 50  0001 C CNN
+F 3 "~" H 4400 1850 50  0001 C CNN
+	1    4400 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0118
+U 1 1 5B1D6484
+P 4400 1600
+F 0 "#PWR0118" H 4400 1350 50  0001 C CNN
+F 1 "GND" H 4405 1427 50  0000 C CNN
+F 2 "" H 4400 1600 50  0001 C CNN
+F 3 "" H 4400 1600 50  0001 C CNN
+	1    4400 1600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4400 2000 4400 2050
+Connection ~ 4400 2050
+Wire Wire Line
+	4400 2050 4850 2050
+Wire Wire Line
+	4400 1700 4400 1600
+Text Notes 4250 2150 0    50   ~ 0
+internal pull-up
+Text HLabel 8300 1950 2    50   Input ~ 0
+IN1_A
+Text HLabel 8300 2050 2    50   Input ~ 0
+IN2_A
+Text HLabel 8300 2150 2    50   Input ~ 0
+EN_A
+Text HLabel 8300 2650 2    50   Input ~ 0
+IN1_B
+Text HLabel 8300 2750 2    50   Input ~ 0
+IN2_B
+Text HLabel 8300 2850 2    50   Input ~ 0
+EN_B
+Text HLabel 8300 2250 2    50   Input ~ 0
+Sense_A
+Text HLabel 8300 2350 2    50   Input ~ 0
+Sense_A_Fault
+Text HLabel 8300 2950 2    50   Input ~ 0
+Sense_B
+Text HLabel 8300 3050 2    50   Input ~ 0
+Sense_B_Fault
+Text Notes 8500 3400 0    50   ~ 0
+add a by pass filter on Sense
+$EndSCHEMATC
