@@ -32,6 +32,15 @@
     * 5.6 A output peak current (2.8 A DC)
     * PWM current controllers
     * Operating frequency up to 100 KHz
+    
+* Current measurement
+    * torque estimation / control
+    * Way of doing it : Use a driver which provides this feature / shunt resistor / Hall effect sensor ?
+    
+* Architecture:
+    * One single PCB card
+    * One motor driver card (speed + torque control) + one position (+ odometrie ?) card ( = carte kiwi ?)
+    * Two motor driver card (speed + torque control) + one position (+ odometrie ?) card ( = carte kiwi ?)
 
 ## Eventually :
 
