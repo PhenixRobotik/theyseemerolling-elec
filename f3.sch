@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:theyseemerolling-elec-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -247,26 +248,297 @@ Wire Wire Line
 	4400 1700 4400 1600
 Text Notes 4250 2150 0    50   ~ 0
 internal pull-up
-Text HLabel 8300 1950 2    50   Input ~ 0
+Text HLabel 8300 1300 2    50   Input ~ 0
 IN1_A
-Text HLabel 8300 2050 2    50   Input ~ 0
+Text HLabel 8300 1400 2    50   Input ~ 0
 IN2_A
-Text HLabel 8300 2150 2    50   Input ~ 0
+Text HLabel 10250 3700 2    50   Input ~ 0
 EN_A
-Text HLabel 8300 2650 2    50   Input ~ 0
+Text HLabel 8300 1750 2    50   Input ~ 0
 IN1_B
-Text HLabel 8300 2750 2    50   Input ~ 0
+Text HLabel 8300 1850 2    50   Input ~ 0
 IN2_B
-Text HLabel 8300 2850 2    50   Input ~ 0
+Text HLabel 10250 4400 2    50   Input ~ 0
 EN_B
-Text HLabel 8300 2250 2    50   Input ~ 0
+Text HLabel 6100 6500 2    50   Input ~ 0
 Sense_A
-Text HLabel 8300 2350 2    50   Input ~ 0
+Text HLabel 8300 1500 2    50   Input ~ 0
 Sense_A_Fault
-Text HLabel 8300 2950 2    50   Input ~ 0
+Text HLabel 4000 6500 2    50   Input ~ 0
 Sense_B
-Text HLabel 8300 3050 2    50   Input ~ 0
+Text HLabel 8300 1950 2    50   Input ~ 0
 Sense_B_Fault
-Text Notes 8500 3400 0    50   ~ 0
-add a by pass filter on Sense
+$Comp
+L 74xx:74HC00 U5
+U 1 1 5B1EF2DA
+P 9150 3700
+F 0 "U5" H 9150 3383 50  0000 C CNN
+F 1 "74HC00" H 9150 3474 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 9150 3700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 9150 3700 50  0001 C CNN
+	1    9150 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC00 U5
+U 2 1 5B1EF4A5
+P 9850 3700
+F 0 "U5" H 9850 3383 50  0000 C CNN
+F 1 "74HC00" H 9850 3474 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 9850 3700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 9850 3700 50  0001 C CNN
+	2    9850 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC00 U5
+U 3 1 5B1EF590
+P 9150 4400
+F 0 "U5" H 9150 4083 50  0000 C CNN
+F 1 "74HC00" H 9150 4174 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 9150 4400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 9150 4400 50  0001 C CNN
+	3    9150 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC00 U5
+U 4 1 5B1EF62F
+P 9850 4400
+F 0 "U5" H 9850 4083 50  0000 C CNN
+F 1 "74HC00" H 9850 4174 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 9850 4400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 9850 4400 50  0001 C CNN
+	4    9850 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC00 U5
+U 5 1 5B1EF75A
+P 9100 5700
+F 0 "U5" V 8733 5700 50  0000 C CNN
+F 1 "74HC00" V 8824 5700 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 9100 5700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 9100 5700 50  0001 C CNN
+	5    9100 5700
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0132
+U 1 1 5B1EF9A6
+P 8500 5700
+F 0 "#PWR0132" H 8500 5450 50  0001 C CNN
+F 1 "GND" V 8505 5572 50  0000 R CNN
+F 2 "" H 8500 5700 50  0001 C CNN
+F 3 "" H 8500 5700 50  0001 C CNN
+	1    8500 5700
+	0    1    -1   0   
+$EndComp
+$Comp
+L power:+3.3V #PWR0133
+U 1 1 5B1EFA48
+P 9750 5700
+F 0 "#PWR0133" H 9750 5550 50  0001 C CNN
+F 1 "+3.3V" V 9765 5828 50  0000 L CNN
+F 2 "" H 9750 5700 50  0001 C CNN
+F 3 "" H 9750 5700 50  0001 C CNN
+	1    9750 5700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8500 5700 8600 5700
+Wire Wire Line
+	9600 5700 9750 5700
+Wire Wire Line
+	9550 3800 9450 3800
+Wire Wire Line
+	9450 3800 9450 3700
+Wire Wire Line
+	9550 3600 9450 3600
+Wire Wire Line
+	9450 3600 9450 3700
+Connection ~ 9450 3700
+Wire Wire Line
+	9550 4500 9450 4500
+Wire Wire Line
+	9450 4500 9450 4400
+Wire Wire Line
+	9550 4300 9450 4300
+Wire Wire Line
+	9450 4300 9450 4400
+Connection ~ 9450 4400
+Wire Wire Line
+	10150 3700 10250 3700
+Wire Wire Line
+	10150 4400 10250 4400
+Text HLabel 8700 3600 0    50   Input ~ 0
+nrst
+Text HLabel 8700 4300 0    50   Input ~ 0
+nrst
+Wire Wire Line
+	8700 3600 8850 3600
+Wire Wire Line
+	8700 4300 8850 4300
+$Comp
+L Device:R R7
+U 1 1 5B1F7B6D
+P 8800 4000
+F 0 "R7" H 8730 3954 50  0000 R CNN
+F 1 "10kR" H 8730 4045 50  0000 R CNN
+F 2 "" V 8730 4000 50  0001 C CNN
+F 3 "~" H 8800 4000 50  0001 C CNN
+	1    8800 4000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R11
+U 1 1 5B1F7C89
+P 8800 4700
+F 0 "R11" H 8870 4746 50  0000 L CNN
+F 1 "10kR" H 8870 4655 50  0000 L CNN
+F 2 "" V 8730 4700 50  0001 C CNN
+F 3 "~" H 8800 4700 50  0001 C CNN
+	1    8800 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0134
+U 1 1 5B1F7D30
+P 8800 4950
+F 0 "#PWR0134" H 8800 4700 50  0001 C CNN
+F 1 "GND" H 8805 4777 50  0000 C CNN
+F 2 "" H 8800 4950 50  0001 C CNN
+F 3 "" H 8800 4950 50  0001 C CNN
+	1    8800 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0135
+U 1 1 5B1F7D7C
+P 8800 4200
+F 0 "#PWR0135" H 8800 3950 50  0001 C CNN
+F 1 "GND" H 8805 4027 50  0000 C CNN
+F 2 "" H 8800 4200 50  0001 C CNN
+F 3 "" H 8800 4200 50  0001 C CNN
+	1    8800 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8800 3850 8800 3800
+Wire Wire Line
+	8800 3800 8850 3800
+Wire Wire Line
+	8800 4550 8800 4500
+Wire Wire Line
+	8800 4500 8850 4500
+Wire Wire Line
+	8800 4950 8800 4850
+Wire Wire Line
+	8800 4200 8800 4150
+Connection ~ 8800 3800
+Connection ~ 8800 4500
+Text Label 8300 3800 0    50   ~ 0
+EN_A_and_NRST
+Wire Wire Line
+	8300 3800 8800 3800
+Text Label 8300 4500 0    50   ~ 0
+EN_B_and_NRST
+Wire Wire Line
+	8300 4500 8800 4500
+$Comp
+L Device:C C?
+U 1 1 5B202742
+P 5350 6700
+F 0 "C?" H 5465 6746 50  0000 L CNN
+F 1 "C" H 5465 6655 50  0000 L CNN
+F 2 "" H 5388 6550 50  0001 C CNN
+F 3 "~" H 5350 6700 50  0001 C CNN
+	1    5350 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5B20325C
+P 5600 6500
+F 0 "R?" V 5393 6500 50  0000 C CNN
+F 1 "R" V 5484 6500 50  0000 C CNN
+F 2 "" V 5530 6500 50  0001 C CNN
+F 3 "~" H 5600 6500 50  0001 C CNN
+	1    5600 6500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5B203339
+P 3700 6500
+F 0 "R?" V 3493 6500 50  0000 C CNN
+F 1 "R" V 3584 6500 50  0000 C CNN
+F 2 "" V 3630 6500 50  0001 C CNN
+F 3 "~" H 3700 6500 50  0001 C CNN
+	1    3700 6500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5B203391
+P 3450 6700
+F 0 "C?" H 3565 6746 50  0000 L CNN
+F 1 "C" H 3565 6655 50  0000 L CNN
+F 2 "" H 3488 6550 50  0001 C CNN
+F 3 "~" H 3450 6700 50  0001 C CNN
+	1    3450 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5B2046C3
+P 5350 6900
+F 0 "#PWR?" H 5350 6650 50  0001 C CNN
+F 1 "GND" H 5355 6727 50  0000 C CNN
+F 2 "" H 5350 6900 50  0001 C CNN
+F 3 "" H 5350 6900 50  0001 C CNN
+	1    5350 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5B2046F9
+P 3450 6900
+F 0 "#PWR?" H 3450 6650 50  0001 C CNN
+F 1 "GND" H 3455 6727 50  0000 C CNN
+F 2 "" H 3450 6900 50  0001 C CNN
+F 3 "" H 3450 6900 50  0001 C CNN
+	1    3450 6900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 6550 5350 6500
+Wire Wire Line
+	5350 6500 5450 6500
+Wire Wire Line
+	5750 6500 6100 6500
+Wire Wire Line
+	5350 6900 5350 6850
+Wire Wire Line
+	3450 6900 3450 6850
+Wire Wire Line
+	3450 6550 3450 6500
+Wire Wire Line
+	3450 6500 3550 6500
+Wire Wire Line
+	3850 6500 4000 6500
+Text Label 2800 6500 0    50   ~ 0
+Sense_B_Filtered
+Text Label 4700 6500 0    50   ~ 0
+Sense_A_Filtered
+Wire Wire Line
+	5350 6500 4700 6500
+Connection ~ 5350 6500
+Wire Wire Line
+	3450 6500 2800 6500
+Connection ~ 3450 6500
+Text Notes 3650 6200 0    50   ~ 0
+Mesure filtering, intensity in dc motor->much noise
+Text Notes 8450 3450 0    50   ~ 0
+Stops the motors when reset and when MCU outputs are Z
 $EndSCHEMATC
