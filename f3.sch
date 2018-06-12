@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 4
+Sheet 3 5
 Title ""
 Date ""
 Rev ""
@@ -248,25 +248,25 @@ Wire Wire Line
 	4400 1700 4400 1600
 Text Notes 4250 2150 0    50   ~ 0
 internal pull-up
-Text HLabel 8300 1300 2    50   Input ~ 0
+Text HLabel 6300 2750 2    50   Input ~ 0
 IN1_A
-Text HLabel 8300 1400 2    50   Input ~ 0
+Text HLabel 6300 2650 2    50   Input ~ 0
 IN2_A
 Text HLabel 10250 3700 2    50   Input ~ 0
 EN_A
-Text HLabel 8300 1750 2    50   Input ~ 0
+Text HLabel 6300 3150 2    50   Input ~ 0
 IN1_B
-Text HLabel 8300 1850 2    50   Input ~ 0
+Text HLabel 6300 3250 2    50   Input ~ 0
 IN2_B
 Text HLabel 10250 4400 2    50   Input ~ 0
 EN_B
 Text HLabel 6100 6500 2    50   Input ~ 0
 Sense_A
-Text HLabel 8300 1500 2    50   Input ~ 0
+Text HLabel 6300 2550 2    50   Input ~ 0
 Sense_A_Fault
 Text HLabel 4000 6500 2    50   Input ~ 0
 Sense_B
-Text HLabel 8300 1950 2    50   Input ~ 0
+Text HLabel 6300 3050 2    50   Input ~ 0
 Sense_B_Fault
 $Comp
 L 74xx:74HC00 U5
@@ -541,4 +541,145 @@ Text Notes 3650 6200 0    50   ~ 0
 Mesure filtering, intensity in dc motor->much noise
 Text Notes 8450 3450 0    50   ~ 0
 Stops the motors when reset and when MCU outputs are Z
+Text Label 6200 2150 0    50   ~ 0
+Sense_B_Filtered
+Text Label 6200 2050 0    50   ~ 0
+Sense_A_Filtered
+Wire Wire Line
+	5950 2050 6200 2050
+Wire Wire Line
+	6200 2150 5950 2150
+Text Label 4100 2950 0    50   ~ 0
+EN_A_and_NRST
+Text Label 4100 3050 0    50   ~ 0
+EN_B_and_NRST
+Wire Wire Line
+	4100 2950 4850 2950
+Wire Wire Line
+	4100 3050 4850 3050
+Text Notes 3150 3000 0    50   ~ 0
+TIM_3_CH_CH4 for PWM
+Text Notes 7000 2100 0    50   ~ 0
+ADC1_IN1\nADC1_IN2
+Text HLabel 6300 2850 2    50   Input ~ 0
+Encoder_1_B
+Text HLabel 6300 2950 2    50   Input ~ 0
+Encoder_1_A
+Wire Wire Line
+	6300 2850 5950 2850
+Wire Wire Line
+	5950 2950 6300 2950
+Text HLabel 6250 3550 2    50   Input ~ 0
+Encoder_2_B
+Wire Wire Line
+	6250 3550 5950 3550
+Text HLabel 4600 3150 0    50   Input ~ 0
+Encoder_2_A
+Wire Wire Line
+	4600 3150 4850 3150
+Wire Wire Line
+	6300 2550 5950 2550
+Wire Wire Line
+	5950 2650 6300 2650
+Wire Wire Line
+	6300 2750 5950 2750
+Text Notes 7000 2950 0    50   ~ 0
+TIM1 Encoder mode
+Text Notes 6950 3600 0    50   ~ 0
+TIM2 Encoder mode
+Wire Wire Line
+	6300 3050 5950 3050
+Wire Wire Line
+	6300 3150 5950 3150
+Wire Wire Line
+	6300 3250 5950 3250
+Text Notes 7100 950  0    50   ~ 0
+Motor A encoder 1\nMotor B encoder 2
+Text HLabel 6300 2250 2    50   Input ~ 0
+CAN_TX
+Text HLabel 6300 2350 2    50   Input ~ 0
+CAN_RX
+Text Notes 6800 2300 0    50   ~ 0
+USART 1
+Wire Wire Line
+	6300 2250 5950 2250
+Wire Wire Line
+	5950 2350 6300 2350
+Text HLabel 4600 3450 0    50   Input ~ 0
+TX_1
+Text HLabel 4600 3550 0    50   Input ~ 0
+RX_1
+Wire Wire Line
+	4600 3550 4850 3550
+Wire Wire Line
+	4600 3450 4850 3450
+$Comp
+L Device:R R?
+U 1 1 5B220C14
+P 7200 2450
+F 0 "R?" V 6993 2450 50  0000 C CNN
+F 1 "1kR" V 7084 2450 50  0000 C CNN
+F 2 "" V 7130 2450 50  0001 C CNN
+F 3 "~" H 7200 2450 50  0001 C CNN
+	1    7200 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_ALT D?
+U 1 1 5B220D22
+P 7550 2450
+F 0 "D?" H 7542 2195 50  0000 C CNN
+F 1 "LED_ALT" H 7542 2286 50  0000 C CNN
+F 2 "" H 7550 2450 50  0001 C CNN
+F 3 "~" H 7550 2450 50  0001 C CNN
+	1    7550 2450
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5B220E69
+P 7850 2450
+F 0 "#PWR?" H 7850 2200 50  0001 C CNN
+F 1 "GND" V 7855 2322 50  0000 R CNN
+F 2 "" H 7850 2450 50  0001 C CNN
+F 3 "" H 7850 2450 50  0001 C CNN
+	1    7850 2450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7850 2450 7700 2450
+Wire Wire Line
+	7400 2450 7350 2450
+Wire Wire Line
+	7050 2450 5950 2450
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5B22738B
+P 4300 2750
+F 0 "J?" H 4220 2425 50  0000 C CNN
+F 1 "Free_1_x02" H 4220 2516 50  0000 C CNN
+F 2 "" H 4300 2750 50  0001 C CNN
+F 3 "~" H 4300 2750 50  0001 C CNN
+	1    4300 2750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5B22749E
+P 3700 3350
+F 0 "J?" H 3620 3025 50  0000 C CNN
+F 1 "Free_2_x02" H 3620 3116 50  0000 C CNN
+F 2 "" H 3700 3350 50  0001 C CNN
+F 3 "~" H 3700 3350 50  0001 C CNN
+	1    3700 3350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4500 2650 4850 2650
+Wire Wire Line
+	4500 2750 4850 2750
+Wire Wire Line
+	3900 3250 4850 3250
+Wire Wire Line
+	3900 3350 4850 3350
 $EndSCHEMATC
