@@ -224,4 +224,10 @@ Wire Wire Line
 	5850 5350 5850 3950
 Wire Wire Line
 	5850 3950 5400 3950
+Text Notes 3500 2100 0    50   ~ 0
+SWCLK
+Text Notes 3500 2200 0    50   ~ 0
+SWDIO
+Text Notes 3500 1900 0    50   ~ 0
+SWO
 $EndSCHEMATC
