@@ -17,29 +17,25 @@ $EndDescr
 $Comp
 L PhoenixRobotik:CAN_conn P?
 U 1 1 5B231012
-P 7450 3100
-F 0 "P?" H 7899 3191 50  0000 L CNN
-F 1 "CAN_conn" H 7899 3100 50  0000 L CNN
-F 2 "Connectors_JST:JST_XH_B04B-XH-A_04x2.50mm_Straight" H 7600 2750 50  0001 C CNN
-F 3 "https://github.com/PhenixRobotik/phenix_kicad" H 7899 3009 50  0000 L CNN
-	1    7450 3100
+P 7450 3050
+F 0 "P?" H 7899 3141 50  0000 L CNN
+F 1 "CAN_conn" H 7899 3050 50  0000 L CNN
+F 2 "Connectors_JST:JST_XH_B04B-XH-A_04x2.50mm_Straight" H 7600 2700 50  0001 C CNN
+F 3 "https://github.com/PhenixRobotik/phenix_kicad" H 7899 2959 50  0001 L CNN
+	1    7450 3050
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5B2312B5
-P 7300 3450
-F 0 "#PWR?" H 7300 3200 50  0001 C CNN
-F 1 "GND" H 7305 3277 50  0000 C CNN
-F 2 "" H 7300 3450 50  0001 C CNN
-F 3 "" H 7300 3450 50  0001 C CNN
-	1    7300 3450
+P 7550 3450
+F 0 "#PWR?" H 7550 3200 50  0001 C CNN
+F 1 "GND" H 7555 3277 50  0000 C CNN
+F 2 "" H 7550 3450 50  0001 C CNN
+F 3 "" H 7550 3450 50  0001 C CNN
+	1    7550 3450
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7300 3450 7300 3250
-Wire Wire Line
-	7300 3250 7450 3250
 $Comp
 L power:GND #PWR?
 U 1 1 5B231C66
@@ -77,14 +73,6 @@ F 3 "" H 6000 2400 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6000 2400 6000 2650
-Wire Wire Line
-	6500 2950 6800 2950
-Wire Wire Line
-	6800 2950 6800 3050
-Wire Wire Line
-	6800 3050 7450 3050
-Wire Wire Line
-	6500 3150 7450 3150
 Text HLabel 5150 2950 0    50   Input ~ 0
 RX_CAN
 Text HLabel 5150 2850 0    50   Input ~ 0
@@ -93,12 +81,8 @@ Wire Wire Line
 	5150 2850 5500 2850
 Wire Wire Line
 	5150 2950 5500 2950
-Text HLabel 7200 2750 1    50   Input ~ 0
+Text HLabel 7550 2650 1    50   Input ~ 0
 +7V_Can
-Wire Wire Line
-	7200 2750 7200 2950
-Wire Wire Line
-	7200 2950 7450 2950
 $Comp
 L Device:R R?
 U 1 1 5B23414E
@@ -128,4 +112,8 @@ Wire Wire Line
 Wire Wire Line
 	5100 3250 5500 3250
 NoConn ~ 5500 3150
+Wire Wire Line
+	6500 3150 7050 3150
+Wire Wire Line
+	6500 2950 7050 2950
 $EndSCHEMATC
