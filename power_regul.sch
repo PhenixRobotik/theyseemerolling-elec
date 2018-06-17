@@ -333,10 +333,8 @@ Wire Wire Line
 Connection ~ 4200 3900
 Wire Wire Line
 	4900 4450 4900 4600
-Text HLabel 5200 3900 2    50   Input ~ 0
+Text HLabel 5750 3650 1    50   Input ~ 0
 Power
-Wire Wire Line
-	4900 3900 5200 3900
 Connection ~ 4900 3900
 $Comp
 L Device:Fuse F2
@@ -457,4 +455,70 @@ F 3 "" H 3700 2350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3700 2350 3700 2200
+Text HLabel 6750 4400 2    50   Input ~ 0
+~IS_POWERED
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5B27BE2D
+P 6300 3950
+F 0 "#PWR?" H 6300 3800 50  0001 C CNN
+F 1 "+3.3V" H 6315 4123 50  0000 C CNN
+F 2 "" H 6300 3950 50  0001 C CNN
+F 3 "" H 6300 3950 50  0001 C CNN
+	1    6300 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 3900 5750 3650
+Wire Wire Line
+	4900 3900 5750 3900
+Connection ~ 5750 3900
+$Comp
+L Transistor_FET:BSS138 Q?
+U 1 1 5B280ABB
+P 6200 4650
+F 0 "Q?" H 6405 4696 50  0000 L CNN
+F 1 "BSS138" H 6405 4605 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 6400 4575 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 6200 4650 50  0001 L CNN
+	1    6200 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5B280C8D
+P 6300 4200
+F 0 "R?" H 6370 4246 50  0000 L CNN
+F 1 "10kR" H 6370 4155 50  0000 L CNN
+F 2 "" V 6230 4200 50  0001 C CNN
+F 3 "~" H 6300 4200 50  0001 C CNN
+	1    6300 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5B281393
+P 6300 5050
+F 0 "#PWR?" H 6300 4800 50  0001 C CNN
+F 1 "GND" H 6305 4877 50  0000 C CNN
+F 2 "" H 6300 5050 50  0001 C CNN
+F 3 "" H 6300 5050 50  0001 C CNN
+	1    6300 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 4650 6000 4650
+Wire Wire Line
+	5750 3900 5750 4650
+Wire Wire Line
+	6300 4850 6300 5050
+Wire Wire Line
+	6300 4450 6300 4400
+Wire Wire Line
+	6300 3950 6300 4050
+Wire Wire Line
+	6300 4400 6750 4400
+Connection ~ 6300 4400
+Wire Wire Line
+	6300 4400 6300 4350
 $EndSCHEMATC
