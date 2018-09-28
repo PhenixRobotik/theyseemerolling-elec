@@ -360,7 +360,7 @@ AR Path="/5B1D7C42/5BAEB6D8" Ref="F?"  Part="1"
 AR Path="/5B230D4C/5BAEB6D8" Ref="F1"  Part="1" 
 F 0 "F1" V 3475 4050 50  0000 C CNN
 F 1 "Polyfuse" V 3566 4050 50  0000 C CNN
-F 2 "" H 3750 3850 50  0001 L CNN
+F 2 "Fuse:Fuse_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3750 3850 50  0001 L CNN
 F 3 "~" H 3700 4050 50  0001 C CNN
 	1    3700 4050
 	0    1    1    0   
