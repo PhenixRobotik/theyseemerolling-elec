@@ -93,7 +93,7 @@ S 4300 5200 1300 1050
 U 5B1D7C42
 F0 "power_regul" 50
 F1 "power_regul.sch" 50
-F2 "+3V3_regul" I R 5600 5650 50 
+F2 "+3V3" I R 5600 5650 50 
 F3 "+7V_input" I L 4300 5350 50 
 F4 "Power_input" I L 4300 5800 50 
 F5 "Power" I R 5600 6050 50 

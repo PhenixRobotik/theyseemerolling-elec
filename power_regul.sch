@@ -16,8 +16,8 @@ Comment4 ""
 $EndDescr
 Text Notes 5500 1600 0    50   ~ 0
 ST
-Text HLabel 6650 1900 2    50   Input ~ 0
-+3V3_regul
+Text HLabel 6300 1600 1    50   Input ~ 0
++3V3
 $Comp
 L power:GND #PWR0119
 U 1 1 5B1D7F74
@@ -161,9 +161,6 @@ Wire Wire Line
 	5750 1900 6300 1900
 Wire Wire Line
 	6300 2100 6300 1900
-Connection ~ 6300 1900
-Wire Wire Line
-	6300 1900 6650 1900
 Wire Wire Line
 	5750 2550 5750 2400
 Wire Wire Line
@@ -356,10 +353,10 @@ Wire Wire Line
 Text Notes 500  2450 0    50   ~ 0
 polarity and over current protection
 $Comp
-L Regulator_Linear:LD1117S50TR_SOT223 U?
+L Regulator_Linear:LD1117S50TR_SOT223 U6
 U 1 1 5B1F0BB7
 P 3700 1900
-F 0 "U?" H 3700 2142 50  0000 C CNN
+F 0 "U6" H 3700 2142 50  0000 C CNN
 F 1 "LD1117S50TR_SOT223" H 3700 2051 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 3700 2100 50  0001 C CNN
 F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000544.pdf" H 3800 1650 50  0001 C CNN
@@ -367,10 +364,10 @@ F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/da
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
+L Device:C C10
 U 1 1 5B1F0CAC
 P 4200 2250
-F 0 "C?" H 4315 2296 50  0000 L CNN
+F 0 "C10" H 4315 2296 50  0000 L CNN
 F 1 "C" H 4315 2205 50  0000 L CNN
 F 2 "" H 4238 2100 50  0001 C CNN
 F 3 "~" H 4200 2250 50  0001 C CNN
@@ -378,10 +375,10 @@ F 3 "~" H 4200 2250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:LED_ALT D?
+L Device:LED_ALT D9
 U 1 1 5B1F0D12
 P 3100 2200
-F 0 "D?" V 3138 2082 50  0000 R CNN
+F 0 "D9" V 3138 2082 50  0000 R CNN
 F 1 "LED_ALT" V 3047 2082 50  0000 R CNN
 F 2 "" H 3100 2200 50  0001 C CNN
 F 3 "~" H 3100 2200 50  0001 C CNN
@@ -389,10 +386,10 @@ F 3 "~" H 3100 2200 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R15
 U 1 1 5B1F0D6A
 P 3100 2700
-F 0 "R?" H 3170 2746 50  0000 L CNN
+F 0 "R15" H 3170 2746 50  0000 L CNN
 F 1 "R" H 3170 2655 50  0000 L CNN
 F 2 "" V 3030 2700 50  0001 C CNN
 F 3 "~" H 3100 2700 50  0001 C CNN
@@ -400,10 +397,10 @@ F 3 "~" H 3100 2700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0105
 U 1 1 5B1F0DE0
 P 3100 3000
-F 0 "#PWR?" H 3100 2750 50  0001 C CNN
+F 0 "#PWR0105" H 3100 2750 50  0001 C CNN
 F 1 "GND" H 3105 2827 50  0000 C CNN
 F 2 "" H 3100 3000 50  0001 C CNN
 F 3 "" H 3100 3000 50  0001 C CNN
@@ -411,10 +408,10 @@ F 3 "" H 3100 3000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0138
 U 1 1 5B1F0E0F
 P 4200 2900
-F 0 "#PWR?" H 4200 2650 50  0001 C CNN
+F 0 "#PWR0138" H 4200 2650 50  0001 C CNN
 F 1 "GND" H 4205 2727 50  0000 C CNN
 F 2 "" H 4200 2900 50  0001 C CNN
 F 3 "" H 4200 2900 50  0001 C CNN
@@ -443,10 +440,10 @@ Connection ~ 4350 1900
 Wire Wire Line
 	4200 2400 4200 2900
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0139
 U 1 1 5B1F434C
 P 3700 2350
-F 0 "#PWR?" H 3700 2100 50  0001 C CNN
+F 0 "#PWR0139" H 3700 2100 50  0001 C CNN
 F 1 "GND" H 3705 2177 50  0000 C CNN
 F 2 "" H 3700 2350 50  0001 C CNN
 F 3 "" H 3700 2350 50  0001 C CNN
@@ -458,10 +455,10 @@ Wire Wire Line
 Text HLabel 6750 4400 2    50   Input ~ 0
 ~IS_POWERED
 $Comp
-L power:+3.3V #PWR?
+L power:+3.3V #PWR0140
 U 1 1 5B27BE2D
 P 6300 3950
-F 0 "#PWR?" H 6300 3800 50  0001 C CNN
+F 0 "#PWR0140" H 6300 3800 50  0001 C CNN
 F 1 "+3.3V" H 6315 4123 50  0000 C CNN
 F 2 "" H 6300 3950 50  0001 C CNN
 F 3 "" H 6300 3950 50  0001 C CNN
@@ -474,10 +471,10 @@ Wire Wire Line
 	4900 3900 5750 3900
 Connection ~ 5750 3900
 $Comp
-L Transistor_FET:BSS138 Q?
+L Transistor_FET:BSS138 Q1
 U 1 1 5B280ABB
 P 6200 4650
-F 0 "Q?" H 6405 4696 50  0000 L CNN
+F 0 "Q1" H 6405 4696 50  0000 L CNN
 F 1 "BSS138" H 6405 4605 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 6400 4575 50  0001 L CIN
 F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 6200 4650 50  0001 L CNN
@@ -485,10 +482,10 @@ F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 6200 4650 50  000
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R16
 U 1 1 5B280C8D
 P 6300 4200
-F 0 "R?" H 6370 4246 50  0000 L CNN
+F 0 "R16" H 6370 4246 50  0000 L CNN
 F 1 "10kR" H 6370 4155 50  0000 L CNN
 F 2 "" V 6230 4200 50  0001 C CNN
 F 3 "~" H 6300 4200 50  0001 C CNN
@@ -496,10 +493,10 @@ F 3 "~" H 6300 4200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0141
 U 1 1 5B281393
 P 6300 5050
-F 0 "#PWR?" H 6300 4800 50  0001 C CNN
+F 0 "#PWR0141" H 6300 4800 50  0001 C CNN
 F 1 "GND" H 6305 4877 50  0000 C CNN
 F 2 "" H 6300 5050 50  0001 C CNN
 F 3 "" H 6300 5050 50  0001 C CNN
@@ -521,4 +518,7 @@ Wire Wire Line
 Connection ~ 6300 4400
 Wire Wire Line
 	6300 4400 6300 4350
+Wire Wire Line
+	6300 1600 6300 1900
+Connection ~ 6300 1900
 $EndSCHEMATC
