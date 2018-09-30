@@ -133,19 +133,16 @@ Wire Wire Line
 	7050 2000 6300 2000
 Wire Wire Line
 	6300 2000 6300 1950
-Connection ~ 6300 1950
 Wire Wire Line
 	6300 2150 6300 2100
 Wire Wire Line
 	6300 2100 7050 2100
 Wire Wire Line
 	7050 2100 7050 2150
-Connection ~ 6300 2150
 Wire Wire Line
 	6800 1650 7550 1650
 Wire Wire Line
 	7550 2450 6800 2450
-Connection ~ 6800 2450
 Text Notes 7400 3750 0    50   ~ 0
 ST
 Text HLabel 8200 3750 1    50   Input ~ 0

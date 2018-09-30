@@ -262,7 +262,7 @@ Text HLabel 10250 4400 2    50   Input ~ 0
 EN_B
 Text HLabel 6100 6500 2    50   Input ~ 0
 Sense_A
-Text HLabel 4200 3250 0    50   Input ~ 0
+Text HLabel 6300 3550 2    50   Input ~ 0
 Sense_A_Fault
 Text HLabel 4000 6500 2    50   Input ~ 0
 Sense_B
@@ -569,12 +569,8 @@ Wire Wire Line
 	5950 2950 6300 2950
 Text HLabel 6200 2050 2    50   Input ~ 0
 Encoder_2_B
-Wire Wire Line
-	6250 3550 5950 3550
 Text HLabel 6200 2150 2    50   Input ~ 0
 Encoder_2_A
-Wire Wire Line
-	4600 3150 4850 3150
 Wire Wire Line
 	6300 2550 5950 2550
 Wire Wire Line
@@ -615,8 +611,8 @@ $Comp
 L Device:R R13
 U 1 1 5B220C14
 P 4350 2650
-F 0 "R13" V 4143 2650 50  0000 C CNN
-F 1 "1kR" V 4234 2650 50  0000 C CNN
+F 0 "R13" V 4550 2650 50  0000 C CNN
+F 1 "1kR" V 4450 2650 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4280 2650 50  0001 C CNN
 F 3 "~" H 4350 2650 50  0001 C CNN
 	1    4350 2650
@@ -650,10 +646,6 @@ Wire Wire Line
 	4150 2650 4200 2650
 Wire Wire Line
 	4500 2650 4850 2650
-Text HLabel 6250 3550 2    50   Input ~ 0
-TDI
-Text HLabel 4600 3150 0    50   Input ~ 0
-TDO
 Text Notes 6850 2150 0    50   ~ 0
 TIM2 Encoder mode
 Wire Wire Line
@@ -662,21 +654,94 @@ Text Notes 7000 2450 0    50   ~ 0
 ADC_2 IN-1 IN-2
 Wire Wire Line
 	4850 3250 4200 3250
-Text HLabel 3800 3350 0    50   Input ~ 0
+Text HLabel 4750 2750 0    50   Input ~ 0
 ABOUT_DA_POWER
 Wire Wire Line
-	3800 3350 4850 3350
+	4750 2750 4850 2750
 $Comp
-L Connector_Generic:Conn_01x01 J1
-U 1 1 5B2769A6
-P 4550 2750
-F 0 "J1" H 4470 2525 50  0000 C CNN
-F 1 "Conn_Free" H 4470 2616 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 4550 2750 50  0001 C CNN
-F 3 "~" H 4550 2750 50  0001 C CNN
-	1    4550 2750
-	-1   0    0    1   
+L Memory_EEPROM:CAT250xxx U8
+U 1 1 5BB10EE9
+P 2250 4400
+F 0 "U8" H 2250 4878 50  0000 C CNN
+F 1 "AT25SF041" H 2250 4787 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 2250 4400 50  0001 C CNN
+F 3 "http://www.onsemi.com/PowerSolutions/product.do?id=CAT25040" H 2250 4400 50  0001 C CNN
+	1    2250 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0153
+U 1 1 5BB11507
+P 2250 3850
+F 0 "#PWR0153" H 2250 3700 50  0001 C CNN
+F 1 "+3.3V" H 2265 4023 50  0000 C CNN
+F 2 "" H 2250 3850 50  0001 C CNN
+F 3 "" H 2250 3850 50  0001 C CNN
+	1    2250 3850
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4750 2750 4850 2750
+	2250 3850 2250 4050
+$Comp
+L power:GND #PWR0154
+U 1 1 5BB13BD4
+P 2250 4900
+F 0 "#PWR0154" H 2250 4650 50  0001 C CNN
+F 1 "GND" H 2255 4727 50  0000 C CNN
+F 2 "" H 2250 4900 50  0001 C CNN
+F 3 "" H 2250 4900 50  0001 C CNN
+	1    2250 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 4900 2250 4700
+Wire Wire Line
+	4850 3150 4650 3150
+Text Label 4650 3150 0    50   ~ 0
+SCK
+Text Label 2650 4300 0    50   ~ 0
+SCK
+Text Label 2650 4400 0    50   ~ 0
+MOSI
+Text Label 2650 4500 0    50   ~ 0
+MISO
+Wire Wire Line
+	6300 3550 5950 3550
+Text Label 4200 3250 0    50   ~ 0
+MISO
+Text Label 4200 3350 0    50   ~ 0
+MOSI
+Wire Wire Line
+	4200 3350 4850 3350
+Text Notes 3800 3350 0    50   ~ 0
+SPI 1
+$Comp
+L power:GND #PWR0155
+U 1 1 5BB2A93D
+P 1750 4700
+F 0 "#PWR0155" H 1750 4450 50  0001 C CNN
+F 1 "GND" H 1755 4527 50  0000 C CNN
+F 2 "" H 1750 4700 50  0001 C CNN
+F 3 "" H 1750 4700 50  0001 C CNN
+	1    1750 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 4700 1750 4500
+Wire Wire Line
+	1750 4500 1850 4500
+Wire Wire Line
+	1850 4300 1750 4300
+Wire Wire Line
+	1750 4300 1750 4050
+Wire Wire Line
+	1750 4050 2250 4050
+Connection ~ 2250 4050
+Wire Wire Line
+	2250 4050 2250 4100
+Wire Wire Line
+	1850 4400 1750 4400
+Wire Wire Line
+	1750 4400 1750 4300
+Connection ~ 1750 4300
 $EndSCHEMATC
