@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:theyseemerolling-elec-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -209,7 +210,7 @@ U 1 1 5BAE70F3
 P 8650 3600
 F 0 "Encoder1" H 8730 3592 50  0000 L CNN
 F 1 "Conn_01x04" H 8730 3501 50  0000 L CNN
-F 2 "Connector_Molex:Molex_Micro-Latch_53254-0470_1x04_P2.00mm_Horizontal" H 8650 3600 50  0001 C CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-04A_1x04_P2.54mm_Vertical" H 8650 3600 50  0001 C CNN
 F 3 "~" H 8650 3600 50  0001 C CNN
 	1    8650 3600
 	1    0    0    -1  
@@ -220,7 +221,7 @@ U 1 1 5BAE7214
 P 8650 4100
 F 0 "Encoder2" H 8730 4092 50  0000 L CNN
 F 1 "Conn_01x04" H 8730 4001 50  0000 L CNN
-F 2 "Connector_Molex:Molex_Micro-Latch_53254-0470_1x04_P2.00mm_Horizontal" H 8650 4100 50  0001 C CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-04A_1x04_P2.54mm_Vertical" H 8650 4100 50  0001 C CNN
 F 3 "~" H 8650 4100 50  0001 C CNN
 	1    8650 4100
 	1    0    0    -1  

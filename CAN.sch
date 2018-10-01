@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:theyseemerolling-elec-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -19,7 +20,7 @@ U 1 1 5B231012
 P 6700 2050
 F 0 "P1" H 6500 1750 50  0000 L CNN
 F 1 "CAN_conn" H 6450 2350 50  0000 L CNN
-F 2 "Connector_JST:JST_XH_S04B-XH-A_1x04_P2.50mm_Horizontal" H 6850 1700 50  0001 C CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-04A_1x04_P2.54mm_Vertical" H 6850 1700 50  0001 C CNN
 F 3 "https://github.com/PhenixRobotik/phenix_kicad" H 7149 1959 50  0001 L CNN
 	1    6700 2050
 	1    0    0    -1  
@@ -121,7 +122,7 @@ U 1 1 5BADEF26
 P 7450 2050
 F 0 "P2" H 7250 1750 50  0000 L CNN
 F 1 "CAN_conn" H 7200 2350 50  0000 L CNN
-F 2 "Connector_JST:JST_XH_S04B-XH-A_1x04_P2.50mm_Horizontal" H 7600 1700 50  0001 C CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-04A_1x04_P2.54mm_Vertical" H 7600 1700 50  0001 C CNN
 F 3 "https://github.com/PhenixRobotik/phenix_kicad" H 7899 1959 50  0001 L CNN
 	1    7450 2050
 	1    0    0    -1  
