@@ -204,13 +204,9 @@ Wire Wire Line
 	3650 2250 4850 2250
 Wire Wire Line
 	3100 2250 3350 2250
-Wire Wire Line
-	5950 3350 6250 3350
-Wire Wire Line
-	5950 3450 6250 3450
-Text HLabel 6250 3350 2    50   Input ~ 0
+Text HLabel 5950 3350 2    50   Input ~ 0
 TMS
-Text HLabel 6250 3450 2    50   Input ~ 0
+Text HLabel 5950 3450 2    50   Input ~ 0
 TCK
 Text HLabel 4250 2050 0    50   Input ~ 0
 nrst
@@ -247,25 +243,25 @@ Wire Wire Line
 	4400 1700 4400 1600
 Text Notes 4250 2150 0    50   ~ 0
 internal pull-up
-Text HLabel 6300 2750 2    50   Input ~ 0
+Text HLabel 5950 2350 2    50   Input ~ 0
 IN1_A
-Text HLabel 6300 2650 2    50   Input ~ 0
+Text HLabel 5950 2250 2    50   Input ~ 0
 IN2_A
 Text HLabel 10250 3700 2    50   Input ~ 0
 EN_A
-Text HLabel 6300 3150 2    50   Input ~ 0
+Text HLabel 5950 2550 2    50   Input ~ 0
 IN1_B
-Text HLabel 6300 3250 2    50   Input ~ 0
+Text HLabel 5950 2750 2    50   Input ~ 0
 IN2_B
 Text HLabel 10250 4400 2    50   Input ~ 0
 EN_B
 Text HLabel 6100 6500 2    50   Input ~ 0
 Sense_A
-Text HLabel 6300 3550 2    50   Input ~ 0
+Text HLabel 5950 3550 2    50   Input ~ 0
 Sense_A_Fault
 Text HLabel 4000 6500 2    50   Input ~ 0
 Sense_B
-Text HLabel 6300 3050 2    50   Input ~ 0
+Text HLabel 5950 3050 2    50   Input ~ 0
 Sense_B_Fault
 $Comp
 L 74xx:74HC00 U5
@@ -540,72 +536,36 @@ Text Notes 3650 6200 0    50   ~ 0
 Mesure filtering, intensity in dc motor->much noise
 Text Notes 8450 3450 0    50   ~ 0
 Stops the motors when reset and when MCU outputs are Z
-Text Label 6300 2550 0    50   ~ 0
+Text Label 4850 3050 2    50   ~ 0
 Sense_B_Filtered
-Text Label 6300 2450 0    50   ~ 0
+Text Label 4850 2950 2    50   ~ 0
 Sense_A_Filtered
-Wire Wire Line
-	5950 2050 6200 2050
-Wire Wire Line
-	6200 2150 5950 2150
-Text Label 4100 2950 0    50   ~ 0
+Text Label 5950 2450 0    50   ~ 0
 EN_A_and_NRST
-Text Label 4100 3050 0    50   ~ 0
+Text Label 5950 2650 0    50   ~ 0
 EN_B_and_NRST
-Wire Wire Line
-	4100 2950 4850 2950
-Wire Wire Line
-	4100 3050 4850 3050
-Text Notes 3150 3000 0    50   ~ 0
+Text Notes 7750 2200 0    50   ~ 0
 TIM_3_CH_CH4 for PWM
-Text HLabel 6300 2850 2    50   Input ~ 0
+Text HLabel 5950 2950 2    50   Input ~ 0
 Encoder_1_B
-Text HLabel 6300 2950 2    50   Input ~ 0
+Text HLabel 5950 2850 2    50   Input ~ 0
 Encoder_1_A
-Wire Wire Line
-	6300 2850 5950 2850
-Wire Wire Line
-	5950 2950 6300 2950
-Text HLabel 6200 2050 2    50   Input ~ 0
+Text HLabel 5950 2050 2    50   Input ~ 0
 Encoder_2_B
-Text HLabel 6200 2150 2    50   Input ~ 0
+Text HLabel 5950 2150 2    50   Input ~ 0
 Encoder_2_A
-Wire Wire Line
-	6300 2550 5950 2550
-Wire Wire Line
-	5950 2650 6300 2650
-Wire Wire Line
-	6300 2750 5950 2750
-Text Notes 7000 2950 0    50   ~ 0
+Text Notes 6500 2950 0    50   ~ 0
 TIM1 Encoder mode
-Text Notes 8100 3250 0    50   ~ 0
-TIM2 Encoder mode
-Wire Wire Line
-	6300 3050 5950 3050
-Wire Wire Line
-	6300 3150 5950 3150
-Wire Wire Line
-	6300 3250 5950 3250
 Text Notes 7100 950  0    50   ~ 0
 Motor A encoder 1\nMotor B encoder 2
-Text HLabel 6300 2250 2    50   Input ~ 0
+Text HLabel 5950 3250 2    50   Input ~ 0
 CAN_TX
-Text HLabel 6300 2350 2    50   Input ~ 0
+Text HLabel 5950 3150 2    50   Input ~ 0
 CAN_RX
-Text Notes 6800 2300 0    50   ~ 0
-USART 1
-Wire Wire Line
-	6300 2250 5950 2250
-Wire Wire Line
-	5950 2350 6300 2350
-Text HLabel 4600 3450 0    50   Input ~ 0
+Text HLabel 4850 3450 0    50   Input ~ 0
 TX_1
-Text HLabel 4600 3550 0    50   Input ~ 0
+Text HLabel 4850 3550 0    50   Input ~ 0
 RX_1
-Wire Wire Line
-	4600 3550 4850 3550
-Wire Wire Line
-	4600 3450 4850 3450
 $Comp
 L Device:R R13
 U 1 1 5B220C14
@@ -645,14 +605,10 @@ Wire Wire Line
 	4150 2650 4200 2650
 Wire Wire Line
 	4500 2650 4850 2650
-Text Notes 6850 2150 0    50   ~ 0
+Text Notes 6500 2150 0    50   ~ 0
 TIM2 Encoder mode
-Wire Wire Line
-	6300 2450 5950 2450
-Text Notes 7000 2450 0    50   ~ 0
+Text Notes 4200 3000 2    50   ~ 0
 ADC_2 IN-1 IN-2
-Wire Wire Line
-	4850 3250 4200 3250
 Text HLabel 4750 2750 0    50   Input ~ 0
 ABOUT_DA_POWER
 Wire Wire Line
@@ -694,9 +650,7 @@ F 3 "" H 2250 4900 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2250 4900 2250 4700
-Wire Wire Line
-	4850 3150 4650 3150
-Text Label 4650 3150 0    50   ~ 0
+Text Label 4850 3150 2    50   ~ 0
 SCK
 Text Label 2650 4300 0    50   ~ 0
 SCK
@@ -704,15 +658,11 @@ Text Label 2650 4400 0    50   ~ 0
 MOSI
 Text Label 2650 4500 0    50   ~ 0
 MISO
-Wire Wire Line
-	6300 3550 5950 3550
-Text Label 4200 3250 0    50   ~ 0
+Text Label 4850 3250 2    50   ~ 0
 MISO
-Text Label 4200 3350 0    50   ~ 0
+Text Label 4850 3350 2    50   ~ 0
 MOSI
-Wire Wire Line
-	4200 3350 4850 3350
-Text Notes 3800 3350 0    50   ~ 0
+Text Notes 4650 3250 2    50   ~ 0
 SPI 1
 $Comp
 L power:GND #PWR0155
@@ -743,4 +693,6 @@ Wire Wire Line
 Wire Wire Line
 	1750 4400 1750 4300
 Connection ~ 1750 4300
+Text Notes 4600 3550 2    50   ~ 0
+USART1
 $EndSCHEMATC

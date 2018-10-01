@@ -351,12 +351,12 @@ F 3 "" H 2900 1750 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x02 J1
+L Connector_Generic:Conn_01x03 J1
 U 1 1 5BB37A13
 P 3700 3700
 F 0 "J1" H 3620 3375 50  0000 C CNN
 F 1 "UART" H 3620 3466 50  0000 C CNN
-F 2 "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 3700 3700 50  0001 C CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-03A_1x03_P2.54mm_Vertical" H 3700 3700 50  0001 C CNN
 F 3 "~" H 3700 3700 50  0001 C CNN
 	1    3700 3700
 	-1   0    0    1   
@@ -365,4 +365,15 @@ Wire Wire Line
 	3900 3600 4100 3600
 Wire Wire Line
 	4100 3700 3900 3700
+$Comp
+L power:GND #PWR0156
+U 1 1 5BB157FB
+P 3900 3800
+F 0 "#PWR0156" H 3900 3550 50  0001 C CNN
+F 1 "GND" H 3905 3627 50  0000 C CNN
+F 2 "" H 3900 3800 50  0001 C CNN
+F 3 "" H 3900 3800 50  0001 C CNN
+	1    3900 3800
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
