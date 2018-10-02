@@ -377,4 +377,48 @@ F 3 "" H 3900 3800 50  0001 C CNN
 	1    3900 3800
 	1    0    0    -1  
 $EndComp
+$Comp
+L Mechanical:MountingHole MH1
+U 1 1 5BB517C4
+P 4550 5450
+F 0 "MH1" H 4650 5496 50  0000 L CNN
+F 1 "MountingHole" H 4650 5405 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 4550 5450 50  0001 C CNN
+F 3 "~" H 4550 5450 50  0001 C CNN
+	1    4550 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole MH2
+U 1 1 5BB51877
+P 4550 5650
+F 0 "MH2" H 4650 5696 50  0000 L CNN
+F 1 "MountingHole" H 4650 5605 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 4550 5650 50  0001 C CNN
+F 3 "~" H 4550 5650 50  0001 C CNN
+	1    4550 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole MH3
+U 1 1 5BB51917
+P 4550 5850
+F 0 "MH3" H 4650 5896 50  0000 L CNN
+F 1 "MountingHole" H 4650 5805 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 4550 5850 50  0001 C CNN
+F 3 "~" H 4550 5850 50  0001 C CNN
+	1    4550 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole MH4
+U 1 1 5BB5195C
+P 4550 6050
+F 0 "MH4" H 4650 6096 50  0000 L CNN
+F 1 "MountingHole" H 4650 6005 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 4550 6050 50  0001 C CNN
+F 3 "~" H 4550 6050 50  0001 C CNN
+	1    4550 6050
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
