@@ -344,8 +344,9 @@ AR Path="/5B1D7C42/5BAEB6D1" Ref="D?"  Part="1"
 AR Path="/5B230D4C/5BAEB6D1" Ref="D2"  Part="1" 
 F 0 "D2" V 4004 4429 50  0000 L CNN
 F 1 "D" V 4095 4429 50  0000 L CNN
-F 2 "Diode_SMD:D_0805_2012Metric_Castellated" H 4050 4350 50  0001 C CNN
+F 2 "Diode_SMD:D_2114_3652Metric_Castellated" H 4050 4350 50  0001 C CNN
 F 3 "~" H 4050 4350 50  0001 C CNN
+F 4 "743-5961" V 4050 4350 50  0001 C CNN "RS"
 	1    4050 4350
 	0    1    1    0   
 $EndComp
@@ -357,8 +358,9 @@ AR Path="/5B1D7C42/5BAEB6D8" Ref="F?"  Part="1"
 AR Path="/5B230D4C/5BAEB6D8" Ref="F1"  Part="1" 
 F 0 "F1" V 3475 4050 50  0000 C CNN
 F 1 "Polyfuse" V 3566 4050 50  0000 C CNN
-F 2 "Fuse:Fuse_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3750 3850 50  0001 L CNN
+F 2 "Fuse:Fuse_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 3750 3850 50  0001 L CNN
 F 3 "~" H 3700 4050 50  0001 C CNN
+F 4 " 867-5211 (2A)" V 3700 4050 50  0001 C CNN "RS"
 	1    3700 4050
 	0    1    1    0   
 $EndComp

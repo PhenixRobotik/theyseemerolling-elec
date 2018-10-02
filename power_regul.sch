@@ -15,17 +15,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Device:D D1
-U 1 1 5B1DBBBB
-P 3600 4300
-F 0 "D1" V 3554 4379 50  0000 L CNN
-F 1 "D" V 3645 4379 50  0000 L CNN
-F 2 "Diode_SMD:D_0805_2012Metric_Castellated" H 3600 4300 50  0001 C CNN
-F 3 "~" H 3600 4300 50  0001 C CNN
-	1    3600 4300
-	0    1    1    0   
-$EndComp
-$Comp
 L Device:C C6
 U 1 1 5B1DBC23
 P 4900 4300
@@ -98,7 +87,7 @@ Wire Wire Line
 Wire Wire Line
 	3600 3900 3600 4150
 Wire Wire Line
-	3600 4650 3600 4450
+	3600 4650 3600 4500
 Wire Wire Line
 	3600 3900 4200 3900
 Wire Wire Line
@@ -124,8 +113,9 @@ U 1 1 5B1DE73C
 P 3300 3900
 F 0 "F2" V 3103 3900 50  0000 C CNN
 F 1 "Fuse" V 3194 3900 50  0000 C CNN
-F 2 "Fuse:Fuseholder_Cylinder-5x20mm_Schurter_0031_8201_Horizontal_Open" V 3230 3900 50  0001 C CNN
+F 2 "Fuse:Fuse_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3230 3900 50  0001 C CNN
 F 3 "~" H 3300 3900 50  0001 C CNN
+F 4 " 164-8062 (5A)" V 3300 3900 50  0001 C CNN "RS"
 	1    3300 3900
 	0    1    1    0   
 $EndComp
@@ -217,4 +207,19 @@ F 3 "" H 2900 4000 50  0001 C CNN
 	1    2900 4000
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:D_Schottky_AAK D1
+U 1 1 5BB4EF97
+P 3600 4300
+F 0 "D1" V 3579 4441 50  0000 L CNN
+F 1 "D_Schottky_AAK" V 3700 3700 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 3600 4300 50  0001 C CNN
+F 3 "~" H 3600 4300 50  0001 C CNN
+F 4 "124-2243" V 3600 4300 50  0001 C CNN "RS"
+	1    3600 4300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3600 4500 3700 4500
+Connection ~ 3600 4500
 $EndSCHEMATC
