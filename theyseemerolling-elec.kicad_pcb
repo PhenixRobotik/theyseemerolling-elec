@@ -1,4 +1,4 @@
-(kicad_pcb (version 20171130) (host pcbnew "(5.0.0-rc2-30-gcd5f727)")
+(kicad_pcb (version 20171130) (host pcbnew 5.0.0)
 
   (general
     (thickness 1.6)
@@ -6,7 +6,7 @@
     (tracks 620)
     (zones 0)
     (modules 75)
-    (nets 62)
+    (nets 64)
   )
 
   (page A4)
@@ -34,7 +34,7 @@
   )
 
   (setup
-    (last_trace_width 0.5)
+    (last_trace_width 0.25)
     (user_trace_width 0.5)
     (user_trace_width 1)
     (trace_clearance 0.2)
@@ -76,7 +76,7 @@
       (useauxorigin false)
       (hpglpennumber 1)
       (hpglpenspeed 20)
-      (hpglpendiameter 15)
+      (hpglpendiameter 15.000000)
       (psnegative false)
       (psa4output false)
       (plotreference true)
@@ -153,6 +153,8 @@
   (net 59 /f3/MISO)
   (net 60 /f3/MOSI)
   (net 61 /f3/SCK)
+  (net 62 "Net-(U7-Pad5)")
+  (net 63 "Net-(J3-Pad6)")
 
   (net_class Default "This is the default net class."
     (clearance 0.2)
@@ -213,6 +215,7 @@
     (add_net "Net-(IC2-Pad16)")
     (add_net "Net-(IC2-Pad5)")
     (add_net "Net-(IC2-Pad8)")
+    (add_net "Net-(J3-Pad6)")
     (add_net "Net-(JP1-Pad2)")
     (add_net "Net-(P1-Pad2)")
     (add_net "Net-(P1-Pad3)")
@@ -221,6 +224,7 @@
     (add_net "Net-(R17-Pad1)")
     (add_net "Net-(U5-Pad12)")
     (add_net "Net-(U5-Pad3)")
+    (add_net "Net-(U7-Pad5)")
     (add_net VCC)
   )
 
@@ -611,7 +615,8 @@
       (net 50 /f3/TMS))
     (pad 5 thru_hole oval (at 10.16 0 180) (size 1.74 2.2) (drill 1.2) (layers *.Cu *.Mask)
       (net 18 /f3/nrst))
-    (pad 6 thru_hole oval (at 12.7 0 180) (size 1.74 2.2) (drill 1.2) (layers *.Cu *.Mask))
+    (pad 6 thru_hole oval (at 12.7 0 180) (size 1.74 2.2) (drill 1.2) (layers *.Cu *.Mask)
+      (net 63 "Net-(J3-Pad6)"))
     (pad 7 thru_hole oval (at 15.24 0 180) (size 1.74 2.2) (drill 1.2) (layers *.Cu *.Mask)
       (net 53 /f3/RX_1))
     (pad 8 thru_hole oval (at 17.78 0 180) (size 1.74 2.2) (drill 1.2) (layers *.Cu *.Mask)
@@ -3179,7 +3184,8 @@
       (net 56 "Net-(P1-Pad3)"))
     (pad 6 smd rect (at 2.7 0.635 90) (size 1.55 0.6) (layers F.Cu F.Paste F.Mask)
       (net 57 "Net-(P1-Pad2)"))
-    (pad 5 smd rect (at 2.7 1.905 90) (size 1.55 0.6) (layers F.Cu F.Paste F.Mask))
+    (pad 5 smd rect (at 2.7 1.905 90) (size 1.55 0.6) (layers F.Cu F.Paste F.Mask)
+      (net 62 "Net-(U7-Pad5)"))
     (pad 4 smd rect (at -2.7 1.905 90) (size 1.55 0.6) (layers F.Cu F.Paste F.Mask)
       (net 49 /f3/CAN_RX))
     (pad 3 smd rect (at -2.7 0.635 90) (size 1.55 0.6) (layers F.Cu F.Paste F.Mask)
@@ -4823,6 +4829,12 @@
         (xy 111.622 67.247) (xy 111.368 67.247) (xy 111.368 67.227) (xy 110.71875 67.227) (xy 110.56 67.38575)
         (xy 110.56 68.001309) (xy 110.656673 68.234698) (xy 110.755198 68.333224) (xy 109.885 69.203422) (xy 109.885 66.566578)
         (xy 110.391591 66.059988) (xy 110.617453 66.059988)
+      )
+    )
+    (filled_polygon
+      (pts
+        (xy 115.270001 67.247) (xy 115.178 67.247) (xy 115.178 67.227) (xy 115.158 67.227) (xy 115.158 66.973)
+        (xy 115.178 66.973) (xy 115.178 66.953) (xy 115.270001 66.953)
       )
     )
   )
