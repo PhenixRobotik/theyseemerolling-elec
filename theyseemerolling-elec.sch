@@ -473,4 +473,26 @@ Wire Wire Line
 	9650 3500 9650 3400
 Wire Wire Line
 	8400 3400 9650 3400
+$Comp
+L Graphic:Logo_Open_Hardware_Large LOGO1
+U 1 1 5BB5225B
+P 6500 5300
+F 0 "LOGO1" H 6500 5800 50  0001 C CNN
+F 1 "Logo_Open_Hardware_Large" H 6500 4900 50  0001 C CNN
+F 2 "Symbol:OSHW-Logo_7.5x8mm_SilkScreen" H 6500 5300 50  0001 C CNN
+F 3 "~" H 6500 5300 50  0001 C CNN
+	1    6500 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Graphic:Logo_Open_Hardware_Small LOGO2
+U 1 1 5BB52377
+P 7300 5300
+F 0 "LOGO2" H 7300 5575 50  0001 C CNN
+F 1 "Logo_Open_Hardware_Small" H 7300 5075 50  0001 C CNN
+F 2 "PhoenixRobotik:Logo_14,5mm" H 7300 5300 50  0001 C CNN
+F 3 "~" H 7300 5300 50  0001 C CNN
+	1    7300 5300
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
