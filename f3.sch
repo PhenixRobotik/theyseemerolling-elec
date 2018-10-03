@@ -240,9 +240,9 @@ Text HLabel 5950 2250 2    50   Input ~ 0
 IN2_A
 Text HLabel 10250 3700 2    50   Input ~ 0
 EN_A
-Text HLabel 5950 2550 2    50   Input ~ 0
-IN1_B
 Text HLabel 5950 2750 2    50   Input ~ 0
+IN1_B
+Text HLabel 5950 2550 2    50   Input ~ 0
 IN2_B
 Text HLabel 10250 4400 2    50   Input ~ 0
 EN_B
@@ -527,9 +527,9 @@ Text Notes 3650 6200 0    50   ~ 0
 Mesure filtering, intensity in dc motor->much noise
 Text Notes 8450 3450 0    50   ~ 0
 Stops the motors when reset and when MCU outputs are Z
-Text Label 4850 3050 2    50   ~ 0
-Sense_B_Filtered
 Text Label 4850 2950 2    50   ~ 0
+Sense_B_Filtered
+Text Label 4850 3050 2    50   ~ 0
 Sense_A_Filtered
 Text Label 5950 2450 0    50   ~ 0
 EN_A_and_NRST
