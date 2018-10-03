@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:theyseemerolling-elec-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -360,7 +359,7 @@ F 3 "~" H 9850 4200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9350 3850 9850 3850
+	9350 3850 9800 3850
 Wire Wire Line
 	9850 3850 9850 4050
 Wire Wire Line
@@ -384,7 +383,7 @@ Wire Wire Line
 Wire Wire Line
 	9400 2700 9400 2550
 Wire Wire Line
-	9400 2550 9900 2550
+	9400 2550 9800 2550
 Wire Wire Line
 	9800 3100 10000 3100
 $Comp
@@ -445,5 +444,55 @@ F 2 "" H 3950 3950 50  0001 C CNN
 F 3 "" H 3950 3950 50  0001 C CNN
 	1    3950 3950
 	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C20
+U 1 1 5BB5E554
+P 9800 2400
+F 0 "C20" H 9915 2446 50  0000 L CNN
+F 1 "100nF" H 9915 2355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.33x1.40mm_HandSolder" H 9838 2250 50  0001 C CNN
+F 3 "~" H 9800 2400 50  0001 C CNN
+	1    9800 2400
+	1    0    0    -1  
+$EndComp
+Connection ~ 9800 2550
+Wire Wire Line
+	9800 2550 9900 2550
+$Comp
+L Device:C C21
+U 1 1 5BB5E695
+P 9800 3700
+F 0 "C21" H 9915 3746 50  0000 L CNN
+F 1 "100nF" H 9915 3655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.33x1.40mm_HandSolder" H 9838 3550 50  0001 C CNN
+F 3 "~" H 9800 3700 50  0001 C CNN
+	1    9800 3700
+	1    0    0    -1  
+$EndComp
+Connection ~ 9800 3850
+Wire Wire Line
+	9800 3850 9850 3850
+$Comp
+L power:GND #PWR0159
+U 1 1 5BB5E7D3
+P 9800 3550
+F 0 "#PWR0159" H 9800 3300 50  0001 C CNN
+F 1 "GND" V 9805 3422 50  0000 R CNN
+F 2 "" H 9800 3550 50  0001 C CNN
+F 3 "" H 9800 3550 50  0001 C CNN
+	1    9800 3550
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0160
+U 1 1 5BB5E838
+P 9800 2250
+F 0 "#PWR0160" H 9800 2000 50  0001 C CNN
+F 1 "GND" V 9805 2122 50  0000 R CNN
+F 2 "" H 9800 2250 50  0001 C CNN
+F 3 "" H 9800 2250 50  0001 C CNN
+	1    9800 2250
+	-1   0    0    1   
 $EndComp
 $EndSCHEMATC

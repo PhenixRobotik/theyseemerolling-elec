@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:theyseemerolling-elec-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -72,7 +71,7 @@ F 3 "" H 5250 1400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5250 1400 5250 1650
+	5250 1400 5250 1550
 Text HLabel 4400 1950 0    50   Input ~ 0
 RX_CAN
 Text HLabel 4400 1850 0    50   Input ~ 0
@@ -513,4 +512,33 @@ Wire Wire Line
 Wire Wire Line
 	8200 3750 8200 4050
 Connection ~ 8200 4050
+$Comp
+L Device:C C24
+U 1 1 5BB50E4B
+P 4650 1550
+F 0 "C24" V 4398 1550 50  0000 C CNN
+F 1 "100nF" V 4489 1550 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.33x1.40mm_HandSolder" H 4688 1400 50  0001 C CNN
+F 3 "~" H 4650 1550 50  0001 C CNN
+	1    4650 1550
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0163
+U 1 1 5BB50F49
+P 4400 1550
+F 0 "#PWR0163" H 4400 1300 50  0001 C CNN
+F 1 "GND" V 4405 1422 50  0000 R CNN
+F 2 "" H 4400 1550 50  0001 C CNN
+F 3 "" H 4400 1550 50  0001 C CNN
+	1    4400 1550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4400 1550 4500 1550
+Wire Wire Line
+	4800 1550 5250 1550
+Connection ~ 5250 1550
+Wire Wire Line
+	5250 1550 5250 1650
 $EndSCHEMATC
