@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:theyseemerolling-elec-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -98,7 +97,7 @@ F 0 "C15" H 6450 2750 50  0000 L CNN
 F 1 "100n" H 6350 2550 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.29x1.40mm_HandSolder" H 6588 2500 50  0001 C CNN
 F 3 "~" H 6550 2650 50  0001 C CNN
-F 4 " 133-5642" H 6550 2650 50  0001 C CNN "RS"
+F 4 "133-5642" H 6550 2650 50  0001 C CNN "RS"
 	1    6550 2650
 	1    0    0    -1  
 $EndComp

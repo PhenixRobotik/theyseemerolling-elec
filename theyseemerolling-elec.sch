@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:theyseemerolling-elec-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -210,7 +209,7 @@ U 1 1 5BAE70F3
 P 8650 3600
 F 0 "J1" H 8730 3592 50  0000 L CNN
 F 1 "Conn_Encoder1" H 8730 3501 50  0000 L CNN
-F 2 "Connector_Molex:Molex_KK-254_AE-6410-04A_1x04_P2.54mm_Vertical" H 8650 3600 50  0001 C CNN
+F 2 "Connector_JST:JST_XH_B04B-XH-A_1x04_P2.50mm_Vertical" H 8650 3600 50  0001 C CNN
 F 3 "~" H 8650 3600 50  0001 C CNN
 	1    8650 3600
 	1    0    0    -1  
@@ -221,7 +220,7 @@ U 1 1 5BAE7214
 P 8650 4100
 F 0 "J6" H 8730 4092 50  0000 L CNN
 F 1 "Conn_Encoder2" H 8730 4001 50  0000 L CNN
-F 2 "Connector_Molex:Molex_KK-254_AE-6410-04A_1x04_P2.54mm_Vertical" H 8650 4100 50  0001 C CNN
+F 2 "Connector_JST:JST_XH_B04B-XH-A_1x04_P2.50mm_Vertical" H 8650 4100 50  0001 C CNN
 F 3 "~" H 8650 4100 50  0001 C CNN
 	1    8650 4100
 	1    0    0    -1  
@@ -306,7 +305,7 @@ U 1 1 5BAFC27B
 P 2700 1850
 F 0 "J3" H 2700 1250 50  0000 C CNN
 F 1 "Conn_SWD_UART" H 2700 1350 50  0000 C CNN
-F 2 "Connector_Molex:Molex_KK-254_AE-6410-08A_1x08_P2.54mm_Vertical" H 2700 1850 50  0001 C CNN
+F 2 "Connector_JST:JST_XH_B08B-XH-A_1x08_P2.50mm_Vertical" H 2700 1850 50  0001 C CNN
 F 3 "~" H 2700 1850 50  0001 C CNN
 	1    2700 1850
 	-1   0    0    1   

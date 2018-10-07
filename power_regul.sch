@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:theyseemerolling-elec-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -115,7 +114,7 @@ F 0 "F2" V 3103 3900 50  0000 C CNN
 F 1 "Fuse" V 3194 3900 50  0000 C CNN
 F 2 "Fuse:Fuse_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3230 3900 50  0001 C CNN
 F 3 "~" H 3300 3900 50  0001 C CNN
-F 4 " 164-8062 (5A)" V 3300 3900 50  0001 C CNN "RS"
+F 4 "164-8062 (5A)" V 3300 3900 50  0001 C CNN "RS"
 	1    3300 3900
 	0    1    1    0   
 $EndComp
