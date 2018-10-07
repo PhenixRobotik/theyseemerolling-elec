@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:theyseemerolling-elec-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -39,8 +40,8 @@ $Comp
 L Connector_Generic:Conn_01x02 J4
 U 1 1 5B1C2A3B
 P 10950 1800
-F 0 "J4" H 10870 1475 50  0000 C CNN
-F 1 "Conn_01x02" H 10870 1566 50  0000 C CNN
+F 0 "J4" H 11050 1800 50  0000 C CNN
+F 1 "Conn_Mot1" H 10950 1900 50  0000 C CNN
 F 2 "Connector_Phoenix_MSTB:PhoenixContact_MSTBA_2,5_2-G_1x02_P5.00mm_Horizontal" H 10950 1800 50  0001 C CNN
 F 3 "~" H 10950 1800 50  0001 C CNN
 	1    10950 1800
@@ -50,8 +51,8 @@ $Comp
 L Connector_Generic:Conn_01x02 J5
 U 1 1 5B1C2AB3
 P 10950 2100
-F 0 "J5" H 10870 1775 50  0000 C CNN
-F 1 "Conn_01x02" H 10870 1866 50  0000 C CNN
+F 0 "J5" H 11050 2100 50  0000 C CNN
+F 1 "Conn_Mot2" H 10950 1900 50  0000 C CNN
 F 2 "Connector_Phoenix_MSTB:PhoenixContact_MSTBA_2,5_2-G_1x02_P5.00mm_Horizontal" H 10950 2100 50  0001 C CNN
 F 3 "~" H 10950 2100 50  0001 C CNN
 	1    10950 2100
@@ -204,22 +205,22 @@ SWCLK
 Text Notes 4350 2050 0    50   ~ 0
 SWDIO
 $Comp
-L Connector_Generic:Conn_01x04 Encoder1
+L Connector_Generic:Conn_01x04 J1
 U 1 1 5BAE70F3
 P 8650 3600
-F 0 "Encoder1" H 8730 3592 50  0000 L CNN
-F 1 "Conn_01x04" H 8730 3501 50  0000 L CNN
+F 0 "J1" H 8730 3592 50  0000 L CNN
+F 1 "Conn_Encoder1" H 8730 3501 50  0000 L CNN
 F 2 "Connector_Molex:Molex_KK-254_AE-6410-04A_1x04_P2.54mm_Vertical" H 8650 3600 50  0001 C CNN
 F 3 "~" H 8650 3600 50  0001 C CNN
 	1    8650 3600
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x04 Encoder2
+L Connector_Generic:Conn_01x04 J6
 U 1 1 5BAE7214
 P 8650 4100
-F 0 "Encoder2" H 8730 4092 50  0000 L CNN
-F 1 "Conn_01x04" H 8730 4001 50  0000 L CNN
+F 0 "J6" H 8730 4092 50  0000 L CNN
+F 1 "Conn_Encoder2" H 8730 4001 50  0000 L CNN
 F 2 "Connector_Molex:Molex_KK-254_AE-6410-04A_1x04_P2.54mm_Vertical" H 8650 4100 50  0001 C CNN
 F 3 "~" H 8650 4100 50  0001 C CNN
 	1    8650 4100
@@ -304,7 +305,7 @@ L Connector_Generic:Conn_01x08 J3
 U 1 1 5BAFC27B
 P 2700 1850
 F 0 "J3" H 2700 1250 50  0000 C CNN
-F 1 "Conn_01x08" H 2700 1350 50  0000 C CNN
+F 1 "Conn_SWD_UART" H 2700 1350 50  0000 C CNN
 F 2 "Connector_Molex:Molex_KK-254_AE-6410-08A_1x08_P2.54mm_Vertical" H 2700 1850 50  0001 C CNN
 F 3 "~" H 2700 1850 50  0001 C CNN
 	1    2700 1850

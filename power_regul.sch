@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:theyseemerolling-elec-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -29,7 +30,7 @@ L Device:R R2
 U 1 1 5B1DBCC7
 P 4200 4600
 F 0 "R2" H 4270 4646 50  0000 L CNN
-F 1 "R" H 4270 4555 50  0000 L CNN
+F 1 "R_LED" H 4270 4555 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4130 4600 50  0001 C CNN
 F 3 "~" H 4200 4600 50  0001 C CNN
 	1    4200 4600
@@ -189,7 +190,7 @@ L Connector_Generic:Conn_01x02 J2
 U 1 1 5BAF0871
 P 2700 4000
 F 0 "J2" H 2620 3675 50  0000 C CNN
-F 1 "Conn_01x02" H 2620 3766 50  0000 C CNN
+F 1 "Conn_Power_In" H 2620 3766 50  0000 C CNN
 F 2 "Connector_Phoenix_MSTB:PhoenixContact_MSTBVA_2,5_2-G_1x02_P5.00mm_Vertical" H 2700 4000 50  0001 C CNN
 F 3 "~" H 2700 4000 50  0001 C CNN
 	1    2700 4000
