@@ -100,7 +100,16 @@ def archive_dir(dirname, filename):
     shutil.make_archive(filename, 'zip', root_dir=None, base_dir=dirname)
 
 if __name__ == '__main__':
-    filename = sys.argv[1]
+    if len(sys.argv) == 1:
+        import glob
+        for file in glob.glob("*.kicad_pcb"):
+            print(file)
+            filename = file
+
+    if len(sys.argv) == 2:
+        filename = sys.argv[1]
+
+
     generate_gerber(filename, 'gerber')
     generate_drillmap(filename, 'gerber')
 
