@@ -552,18 +552,18 @@ F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 3550 2050 50  000
 	0    1    -1   0   
 $EndComp
 Wire Wire Line
-	2850 1950 3350 1950
+	2850 1950 3150 1950
 Wire Wire Line
 	3750 1950 3850 1950
 $Comp
 L Device:R R22
 U 1 1 5BC18716
-P 3850 2150
-F 0 "R22" H 3920 2196 50  0000 L CNN
-F 1 "R" H 3920 2105 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.33x1.40mm_HandSolder" V 3780 2150 50  0001 C CNN
-F 3 "~" H 3850 2150 50  0001 C CNN
-	1    3850 2150
+P 3150 2150
+F 0 "R22" H 3220 2196 50  0000 L CNN
+F 1 "R" H 3220 2105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.33x1.40mm_HandSolder" V 3080 2150 50  0001 C CNN
+F 3 "~" H 3150 2150 50  0001 C CNN
+	1    3150 2150
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -578,17 +578,42 @@ F 3 "" H 3550 2400 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	3550 2400 3550 2350
-Wire Wire Line
-	3550 2350 3850 2350
-Wire Wire Line
-	3850 2350 3850 2300
-Connection ~ 3550 2350
-Wire Wire Line
-	3550 2350 3550 2250
-Wire Wire Line
 	3850 2000 3850 1950
 Connection ~ 3850 1950
 Wire Wire Line
 	3850 1950 4750 1950
+Wire Wire Line
+	3550 2250 3550 2300
+$Comp
+L Device:R R?
+U 1 1 5BBEEFF7
+P 3850 2150
+F 0 "R?" H 3920 2196 50  0000 L CNN
+F 1 "R" H 3920 2105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.33x1.40mm_HandSolder" V 3780 2150 50  0001 C CNN
+F 3 "~" H 3850 2150 50  0001 C CNN
+	1    3850 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 2300 3550 2300
+Connection ~ 3550 2300
+Wire Wire Line
+	3550 2300 3550 2400
+Wire Wire Line
+	3150 2000 3150 1950
+Connection ~ 3150 1950
+Wire Wire Line
+	3150 1950 3350 1950
+$Comp
+L power:+5V #PWR?
+U 1 1 5BBF101F
+P 3850 2300
+F 0 "#PWR?" H 3850 2150 50  0001 C CNN
+F 1 "+5V" H 3865 2473 50  0000 C CNN
+F 2 "" H 3850 2300 50  0001 C CNN
+F 3 "" H 3850 2300 50  0001 C CNN
+	1    3850 2300
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
