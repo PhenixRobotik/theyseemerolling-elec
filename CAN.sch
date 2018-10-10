@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:theyseemerolling-elec-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -72,14 +73,12 @@ F 3 "" H 5250 1400 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5250 1400 5250 1550
-Text HLabel 4400 1950 0    50   Input ~ 0
+Text HLabel 2850 1950 0    50   Input ~ 0
 RX_CAN
 Text HLabel 4400 1850 0    50   Input ~ 0
 TX_CAN
 Wire Wire Line
 	4400 1850 4750 1850
-Wire Wire Line
-	4400 1950 4750 1950
 Text HLabel 6800 1650 1    50   Input ~ 0
 +7V_CAN
 $Comp
@@ -541,4 +540,55 @@ Wire Wire Line
 Connection ~ 5250 1550
 Wire Wire Line
 	5250 1550 5250 1650
+$Comp
+L Transistor_FET:BSS138 Q6
+U 1 1 5BC16B9E
+P 3550 2050
+F 0 "Q6" V 3893 2050 50  0000 C CNN
+F 1 "BSS138" V 3802 2050 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3750 1975 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 3550 2050 50  0001 L CNN
+	1    3550 2050
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	2850 1950 3350 1950
+Wire Wire Line
+	3750 1950 3850 1950
+$Comp
+L Device:R R22
+U 1 1 5BC18716
+P 3850 2150
+F 0 "R22" H 3920 2196 50  0000 L CNN
+F 1 "R" H 3920 2105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.33x1.40mm_HandSolder" V 3780 2150 50  0001 C CNN
+F 3 "~" H 3850 2150 50  0001 C CNN
+	1    3850 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0168
+U 1 1 5BC187E1
+P 3550 2400
+F 0 "#PWR0168" H 3550 2250 50  0001 C CNN
+F 1 "+3.3V" H 3565 2573 50  0000 C CNN
+F 2 "" H 3550 2400 50  0001 C CNN
+F 3 "" H 3550 2400 50  0001 C CNN
+	1    3550 2400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3550 2400 3550 2350
+Wire Wire Line
+	3550 2350 3850 2350
+Wire Wire Line
+	3850 2350 3850 2300
+Connection ~ 3550 2350
+Wire Wire Line
+	3550 2350 3550 2250
+Wire Wire Line
+	3850 2000 3850 1950
+Connection ~ 3850 1950
+Wire Wire Line
+	3850 1950 4750 1950
 $EndSCHEMATC

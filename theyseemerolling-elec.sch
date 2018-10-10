@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:theyseemerolling-elec-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -350,50 +351,6 @@ F 3 "" H 2900 1950 50  0001 C CNN
 	1    2900 1950
 	0    -1   -1   0   
 $EndComp
-$Comp
-L Mechanical:MountingHole MH1
-U 1 1 5BB517C4
-P 4550 5450
-F 0 "MH1" H 4650 5496 50  0000 L CNN
-F 1 "MountingHole" H 4650 5405 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 4550 5450 50  0001 C CNN
-F 3 "~" H 4550 5450 50  0001 C CNN
-	1    4550 5450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole MH2
-U 1 1 5BB51877
-P 4550 5650
-F 0 "MH2" H 4650 5696 50  0000 L CNN
-F 1 "MountingHole" H 4650 5605 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 4550 5650 50  0001 C CNN
-F 3 "~" H 4550 5650 50  0001 C CNN
-	1    4550 5650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole MH3
-U 1 1 5BB51917
-P 4550 5850
-F 0 "MH3" H 4650 5896 50  0000 L CNN
-F 1 "MountingHole" H 4650 5805 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 4550 5850 50  0001 C CNN
-F 3 "~" H 4550 5850 50  0001 C CNN
-	1    4550 5850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole MH4
-U 1 1 5BB5195C
-P 4550 6050
-F 0 "MH4" H 4650 6096 50  0000 L CNN
-F 1 "MountingHole" H 4650 6005 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 4550 6050 50  0001 C CNN
-F 3 "~" H 4550 6050 50  0001 C CNN
-	1    4550 6050
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4100 1600 3400 1600
 Wire Wire Line
@@ -493,6 +450,50 @@ F 1 "Logo_Open_Hardware_Small" H 7300 5075 50  0001 C CNN
 F 2 "PhoenixRobotik:Logo_14,5mm" H 7300 5300 50  0001 C CNN
 F 3 "~" H 7300 5300 50  0001 C CNN
 	1    7300 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Mounting_Hole MK1
+U 1 1 5BC1DE50
+P 4550 5350
+F 0 "MK1" H 4650 5396 50  0000 L CNN
+F 1 "Mounting_Hole" H 4650 5305 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 4550 5350 50  0001 C CNN
+F 3 "" H 4550 5350 50  0001 C CNN
+	1    4550 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Mounting_Hole MK2
+U 1 1 5BC1DE98
+P 4550 5550
+F 0 "MK2" H 4650 5596 50  0000 L CNN
+F 1 "Mounting_Hole" H 4650 5505 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 4550 5550 50  0001 C CNN
+F 3 "" H 4550 5550 50  0001 C CNN
+	1    4550 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Mounting_Hole MK3
+U 1 1 5BC1DEDB
+P 4550 5750
+F 0 "MK3" H 4650 5796 50  0000 L CNN
+F 1 "Mounting_Hole" H 4650 5705 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 4550 5750 50  0001 C CNN
+F 3 "" H 4550 5750 50  0001 C CNN
+	1    4550 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Mounting_Hole MK4
+U 1 1 5BC1DF27
+P 4550 5950
+F 0 "MK4" H 4650 5996 50  0000 L CNN
+F 1 "Mounting_Hole" H 4650 5905 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 4550 5950 50  0001 C CNN
+F 3 "" H 4550 5950 50  0001 C CNN
+	1    4550 5950
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
