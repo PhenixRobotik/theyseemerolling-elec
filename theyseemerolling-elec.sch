@@ -453,7 +453,7 @@ F 3 "~" H 7300 5300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:Mounting_Hole MK1
+L Mechanical:MountingHole MK1
 U 1 1 5BC1DE50
 P 4550 5350
 F 0 "MK1" H 4650 5396 50  0000 L CNN
@@ -464,7 +464,7 @@ F 3 "" H 4550 5350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:Mounting_Hole MK2
+L Mechanical:MountingHole MK2
 U 1 1 5BC1DE98
 P 4550 5550
 F 0 "MK2" H 4650 5596 50  0000 L CNN
@@ -475,7 +475,7 @@ F 3 "" H 4550 5550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:Mounting_Hole MK3
+L Mechanical:MountingHole MK3
 U 1 1 5BC1DEDB
 P 4550 5750
 F 0 "MK3" H 4650 5796 50  0000 L CNN
@@ -486,7 +486,7 @@ F 3 "" H 4550 5750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:Mounting_Hole MK4
+L Mechanical:MountingHole MK4
 U 1 1 5BC1DF27
 P 4550 5950
 F 0 "MK4" H 4650 5996 50  0000 L CNN
