@@ -75,7 +75,7 @@ Wire Wire Line
 	5250 1400 5250 1550
 Text HLabel 2850 1950 0    50   Input ~ 0
 RX_CAN
-Text HLabel 4400 1850 0    50   Input ~ 0
+Text HLabel 1550 1750 0    50   Input ~ 0
 TX_CAN
 Wire Wire Line
 	4400 1850 4750 1850
@@ -579,16 +579,15 @@ F 3 "" H 3550 2400 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3850 2000 3850 1950
-Connection ~ 3850 1950
 Wire Wire Line
 	3850 1950 4750 1950
 Wire Wire Line
 	3550 2250 3550 2300
 $Comp
-L Device:R R?
+L Device:R R24
 U 1 1 5BBEEFF7
 P 3850 2150
-F 0 "R?" H 3920 2196 50  0000 L CNN
+F 0 "R24" H 3920 2196 50  0000 L CNN
 F 1 "R" H 3920 2105 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.33x1.40mm_HandSolder" V 3780 2150 50  0001 C CNN
 F 3 "~" H 3850 2150 50  0001 C CNN
@@ -606,14 +605,68 @@ Connection ~ 3150 1950
 Wire Wire Line
 	3150 1950 3350 1950
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR0169
 U 1 1 5BBF101F
 P 3850 2300
-F 0 "#PWR?" H 3850 2150 50  0001 C CNN
+F 0 "#PWR0169" H 3850 2150 50  0001 C CNN
 F 1 "+5V" H 3865 2473 50  0000 C CNN
 F 2 "" H 3850 2300 50  0001 C CNN
 F 3 "" H 3850 2300 50  0001 C CNN
 	1    3850 2300
 	-1   0    0    1   
 $EndComp
+Connection ~ 3850 1950
+$Comp
+L Transistor_FET:BSS138 Q7
+U 1 1 5BC2C5BF
+P 2250 1850
+F 0 "Q7" V 2593 1850 50  0000 C CNN
+F 1 "BSS138" V 2502 1850 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2450 1775 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 2250 1850 50  0001 L CNN
+	1    2250 1850
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	1550 1750 1850 1750
+$Comp
+L Device:R R23
+U 1 1 5BC2C5C7
+P 1850 1950
+F 0 "R23" H 1920 1996 50  0000 L CNN
+F 1 "R" H 1920 1905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.33x1.40mm_HandSolder" V 1780 1950 50  0001 C CNN
+F 3 "~" H 1850 1950 50  0001 C CNN
+	1    1850 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0170
+U 1 1 5BC2C5CD
+P 2250 2200
+F 0 "#PWR0170" H 2250 2050 50  0001 C CNN
+F 1 "+3.3V" H 2265 2373 50  0000 C CNN
+F 2 "" H 2250 2200 50  0001 C CNN
+F 3 "" H 2250 2200 50  0001 C CNN
+	1    2250 2200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2250 2050 2250 2100
+Wire Wire Line
+	1850 2100 2250 2100
+Connection ~ 2250 2100
+Wire Wire Line
+	2250 2100 2250 2200
+Wire Wire Line
+	1850 1800 1850 1750
+Connection ~ 1850 1750
+Wire Wire Line
+	1850 1750 2050 1750
+Wire Wire Line
+	4400 1750 4400 1850
+Wire Wire Line
+	2450 1750 4400 1750
+Text Notes 1650 1300 0    50   ~ 0
+Le MCP2551 a un pull-up interne sur TX
 $EndSCHEMATC

@@ -134,8 +134,6 @@ F 3 "" H 6300 3950 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5750 3900 5750 3650
-Wire Wire Line
-	4900 3900 5750 3900
 Connection ~ 5750 3900
 $Comp
 L Transistor_FET:BSS138 Q1
@@ -222,4 +220,6 @@ $EndComp
 Wire Wire Line
 	3600 4500 3700 4500
 Connection ~ 3600 4500
+Wire Wire Line
+	4900 3900 5750 3900
 $EndSCHEMATC
