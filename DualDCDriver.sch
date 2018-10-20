@@ -76,7 +76,7 @@ F 3 "~" H 3800 2700 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	4550 3000 4650 3000
+	4550 3000 4600 3000
 $Comp
 L Device:D D3
 U 1 1 5B0AEE55
@@ -142,9 +142,9 @@ F 3 "~" H 4400 3800 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	4550 3400 4650 3400
+	4550 3400 4600 3400
 Wire Wire Line
-	4550 3800 4650 3800
+	4550 3800 4600 3800
 Wire Wire Line
 	4650 3200 3950 3200
 Wire Wire Line
@@ -181,7 +181,7 @@ L Device:C C12
 U 1 1 5B0AEE7E
 P 4100 3500
 F 0 "C12" V 4150 3550 50  0000 L CNN
-F 1 "68n" V 4050 3550 50  0000 L CNN
+F 1 "5.6n" V 4050 3550 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.29x1.40mm_HandSolder" H 4138 3350 50  0001 C CNN
 F 3 "~" H 4100 3500 50  0001 C CNN
 	1    4100 3500
@@ -189,25 +189,17 @@ F 3 "~" H 4100 3500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3950 3400 4250 3400
-Wire Wire Line
-	4250 3400 4250 3500
-Connection ~ 4250 3400
 $Comp
 L Device:C C13
 U 1 1 5B0DCD01
 P 4100 3950
 F 0 "C13" V 4150 4000 50  0000 L CNN
-F 1 "68n" V 4050 4000 50  0000 L CNN
+F 1 "5.6n" V 4050 4000 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.29x1.40mm_HandSolder" H 4138 3800 50  0001 C CNN
 F 3 "~" H 4100 3950 50  0001 C CNN
 	1    4100 3950
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	3950 3800 4250 3800
-Wire Wire Line
-	4250 3800 4250 3950
-Connection ~ 4250 3800
 Wire Wire Line
 	5150 4000 5250 4000
 Connection ~ 5150 4000
@@ -237,11 +229,6 @@ Connection ~ 6250 3000
 Wire Wire Line
 	6250 3000 6250 2500
 Connection ~ 3950 3000
-Wire Wire Line
-	4650 2900 4650 2700
-Wire Wire Line
-	4650 2700 3950 2700
-Connection ~ 3950 2700
 Wire Wire Line
 	3650 3000 3650 2700
 Wire Wire Line
@@ -496,4 +483,57 @@ F 3 "" H 9800 2250 50  0001 C CNN
 	1    9800 2250
 	-1   0    0    1   
 $EndComp
+Wire Wire Line
+	4250 3500 4600 3500
+Wire Wire Line
+	4600 3500 4600 3400
+Connection ~ 4600 3400
+Wire Wire Line
+	4600 3400 4650 3400
+Wire Wire Line
+	3950 3800 4250 3800
+Wire Wire Line
+	4650 2900 4650 2700
+Wire Wire Line
+	4250 3950 4600 3950
+Wire Wire Line
+	4600 3950 4600 3800
+Wire Wire Line
+	4600 3800 4650 3800
+Connection ~ 4600 3800
+Wire Wire Line
+	4650 2700 4300 2700
+Connection ~ 3950 2700
+$Comp
+L power:PWR_FLAG #FLG0105
+U 1 1 5BD00BD7
+P 4300 2250
+F 0 "#FLG0105" H 4300 2325 50  0001 C CNN
+F 1 "PWR_FLAG" H 4300 2424 50  0000 C CNN
+F 2 "" H 4300 2250 50  0001 C CNN
+F 3 "~" H 4300 2250 50  0001 C CNN
+	1    4300 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0106
+U 1 1 5BD00C6E
+P 4600 2150
+F 0 "#FLG0106" H 4600 2225 50  0001 C CNN
+F 1 "PWR_FLAG" H 4600 2324 50  0000 C CNN
+F 2 "" H 4600 2150 50  0001 C CNN
+F 3 "~" H 4600 2150 50  0001 C CNN
+	1    4600 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 2150 4600 3000
+Connection ~ 4600 3000
+Wire Wire Line
+	4600 3000 4650 3000
+Wire Wire Line
+	4300 2250 4300 2700
+Connection ~ 4300 2700
+Wire Wire Line
+	4300 2700 3950 2700
 $EndSCHEMATC
