@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:theyseemerolling-elec-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -694,14 +693,12 @@ Wire Wire Line
 	6300 2100 7050 2100
 Wire Wire Line
 	7050 2100 7050 2050
-Connection ~ 6300 2050
 Wire Wire Line
 	6300 1950 6300 2000
 Wire Wire Line
 	6300 2000 7050 2000
 Wire Wire Line
 	7050 2000 7050 1950
-Connection ~ 6300 1950
 Text HLabel 6150 2150 0    50   Input ~ 0
 NRST
 Wire Wire Line
@@ -712,7 +709,6 @@ Wire Wire Line
 	6300 2200 7050 2200
 Wire Wire Line
 	7050 2200 7050 2150
-Connection ~ 6300 2150
 Wire Wire Line
 	6250 3750 6250 4050
 Wire Wire Line
