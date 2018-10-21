@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:theyseemerolling-elec-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -251,7 +252,7 @@ Text HLabel 6000 3750 2    50   Input ~ 0
 Sense_A_Fault
 Text HLabel 4000 6500 2    50   Input ~ 0
 Sense_B
-Text HLabel 5950 3050 2    50   Input ~ 0
+Text HLabel 6000 3850 2    50   Input ~ 0
 Sense_B_Fault
 $Comp
 L 74xx:74HC00 U5
@@ -435,7 +436,7 @@ L Device:C C9
 U 1 1 5B202742
 P 5350 6700
 F 0 "C9" H 5465 6746 50  0000 L CNN
-F 1 "C" H 5465 6655 50  0000 L CNN
+F 1 "1n" H 5465 6655 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5388 6550 50  0001 C CNN
 F 3 "~" H 5350 6700 50  0001 C CNN
 	1    5350 6700
@@ -468,7 +469,7 @@ L Device:C C8
 U 1 1 5B203391
 P 3450 6700
 F 0 "C8" H 3565 6746 50  0000 L CNN
-F 1 "C" H 3565 6655 50  0000 L CNN
+F 1 "1n" H 3565 6655 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3488 6550 50  0001 C CNN
 F 3 "~" H 3450 6700 50  0001 C CNN
 	1    3450 6700
@@ -956,4 +957,5 @@ Wire Wire Line
 	6650 3550 5950 3550
 Wire Wire Line
 	6650 4050 6900 4050
+NoConn ~ 5950 3050
 $EndSCHEMATC
