@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:theyseemerolling-elec-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -160,7 +159,7 @@ U 1 1 5B1D4443
 P 3000 2250
 F 0 "JP1" V 3046 2352 50  0000 L CNN
 F 1 "JP_Select_Boot" V 2955 2352 50  0000 L CNN
-F 2 "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm" H 3000 2250 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 3000 2250 50  0001 C CNN
 F 3 "~" H 3000 2250 50  0001 C CNN
 	1    3000 2250
 	0    -1   -1   0   

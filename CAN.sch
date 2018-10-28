@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:theyseemerolling-elec-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -668,10 +667,10 @@ Connection ~ 5750 2150
 Wire Wire Line
 	5750 2150 5800 2150
 $Comp
-L power:+3V3 #PWR?
+L power:+3V3 #PWR0144
 U 1 1 5BCE4189
 P 4850 1400
-F 0 "#PWR?" H 4850 1250 50  0001 C CNN
+F 0 "#PWR0144" H 4850 1250 50  0001 C CNN
 F 1 "+3V3" H 4865 1573 50  0000 C CNN
 F 2 "" H 4850 1400 50  0001 C CNN
 F 3 "" H 4850 1400 50  0001 C CNN
