@@ -1,5 +1,5 @@
 (fp_lib_table
-  (lib (name Package_SO)(type KiCad)(uri ${KIPRJMOD}/phenix_kicad/modules/Package_SO.pretty)(options "")(descr ""))
+  (lib (name Package_SO_local)(type KiCad)(uri ${KIPRJMOD}/phenix_kicad/modules/Package_SO.pretty)(options "")(descr ""))
   (lib (name packages3d)(type KiCad)(uri ${KIPRJMOD}/phenix_kicad/modules/packages3d)(options "")(descr ""))
   (lib (name Phoenix_template)(type KiCad)(uri ${KIPRJMOD}/phenix_kicad/modules/Phoenix_template)(options "")(descr ""))
   (lib (name PhoenixRobotik)(type KiCad)(uri ${KIPRJMOD}/phenix_kicad/modules/PhoenixRobotik.pretty)(options "")(descr ""))
