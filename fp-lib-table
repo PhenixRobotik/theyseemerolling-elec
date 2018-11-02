@@ -1,6 +1,6 @@
 (fp_lib_table
   (lib (name Package_SO_local)(type KiCad)(uri ${KIPRJMOD}/phenix_kicad/modules/Package_SO.pretty)(options "")(descr ""))
-  (lib (name PhoenixRobotik)(type KiCad)(uri ${KIPRJMOD}/phenix_kicad/modules/PhoenixRobotik.pretty)(options "")(descr ""))
+  (lib (name PhenixRobotik)(type KiCad)(uri ${KIPRJMOD}/phenix_kicad/modules/PhenixRobotik.pretty)(options "")(descr ""))
   (lib (name RaspberryPiShields)(type KiCad)(uri ${KIPRJMOD}/phenix_kicad/modules/RaspberryPiShields.pretty)(options "")(descr ""))
   (lib (name STMicroelectronics)(type KiCad)(uri ${KIPRJMOD}/phenix_kicad/modules/STMicroelectronics.pretty)(options "")(descr ""))
   (lib (name TSOP)(type KiCad)(uri ${KIPRJMOD}/phenix_kicad/modules/TSOP.pretty)(options "")(descr ""))
