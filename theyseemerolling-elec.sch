@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:theyseemerolling-elec-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -41,7 +42,7 @@ U 1 1 5B1C2A3B
 P 10950 1800
 F 0 "J4" H 11050 1800 50  0000 C CNN
 F 1 "Conn_Mot1" H 10950 1900 50  0000 C CNN
-F 2 "Connector_Phoenix_MSTB:PhoenixContact_MSTBA_2,5_2-G_1x02_P5.00mm_Horizontal" H 10950 1800 50  0001 C CNN
+F 2 "Connector_Phoenix_MC:PhoenixContact_MCV_1,5_2-G-3.81_1x02_P3.81mm_Vertical" H 10950 1800 50  0001 C CNN
 F 3 "~" H 10950 1800 50  0001 C CNN
 	1    10950 1800
 	1    0    0    -1  
@@ -52,7 +53,7 @@ U 1 1 5B1C2AB3
 P 10950 2100
 F 0 "J5" H 11050 2100 50  0000 C CNN
 F 1 "Conn_Mot2" H 10950 1900 50  0000 C CNN
-F 2 "Connector_Phoenix_MSTB:PhoenixContact_MSTBA_2,5_2-G_1x02_P5.00mm_Horizontal" H 10950 2100 50  0001 C CNN
+F 2 "Connector_Phoenix_MC:PhoenixContact_MCV_1,5_2-G-3.81_1x02_P3.81mm_Vertical" H 10950 2100 50  0001 C CNN
 F 3 "~" H 10950 2100 50  0001 C CNN
 	1    10950 2100
 	1    0    0    -1  
