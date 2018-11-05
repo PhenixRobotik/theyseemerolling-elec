@@ -400,50 +400,6 @@ F 3 "~" H 7300 5300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole MK1
-U 1 1 5BC1DE50
-P 4550 5350
-F 0 "MK1" H 4650 5396 50  0000 L CNN
-F 1 "Mounting_Hole" H 4650 5305 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 4550 5350 50  0001 C CNN
-F 3 "" H 4550 5350 50  0001 C CNN
-	1    4550 5350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole MK2
-U 1 1 5BC1DE98
-P 4550 5550
-F 0 "MK2" H 4650 5596 50  0000 L CNN
-F 1 "Mounting_Hole" H 4650 5505 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 4550 5550 50  0001 C CNN
-F 3 "" H 4550 5550 50  0001 C CNN
-	1    4550 5550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole MK3
-U 1 1 5BC1DEDB
-P 4550 5750
-F 0 "MK3" H 4650 5796 50  0000 L CNN
-F 1 "Mounting_Hole" H 4650 5705 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 4550 5750 50  0001 C CNN
-F 3 "" H 4550 5750 50  0001 C CNN
-	1    4550 5750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole MK4
-U 1 1 5BC1DF27
-P 4550 5950
-F 0 "MK4" H 4650 5996 50  0000 L CNN
-F 1 "Mounting_Hole" H 4650 5905 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 4550 5950 50  0001 C CNN
-F 3 "" H 4550 5950 50  0001 C CNN
-	1    4550 5950
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0151
 U 1 1 5BCCA189
 P 3050 1150
@@ -473,4 +429,70 @@ Wire Wire Line
 Connection ~ 3650 2250
 Wire Wire Line
 	3650 2250 4100 2250
+$Comp
+L Mechanical:MountingHole_Pad MK1
+U 1 1 5BE0DFC4
+P 4550 5350
+F 0 "MK1" V 4504 5500 50  0000 L CNN
+F 1 "MountingHole_Pad" V 4595 5500 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_Pad" H 4550 5350 50  0001 C CNN
+F 3 "~" H 4550 5350 50  0001 C CNN
+	1    4550 5350
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad MK2
+U 1 1 5BE0E013
+P 4550 5550
+F 0 "MK2" V 4504 5700 50  0000 L CNN
+F 1 "MountingHole_Pad" V 4595 5700 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_Pad" H 4550 5550 50  0001 C CNN
+F 3 "~" H 4550 5550 50  0001 C CNN
+	1    4550 5550
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad MK3
+U 1 1 5BE0FFB8
+P 4550 5750
+F 0 "MK3" V 4504 5900 50  0000 L CNN
+F 1 "MountingHole_Pad" V 4595 5900 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_Pad" H 4550 5750 50  0001 C CNN
+F 3 "~" H 4550 5750 50  0001 C CNN
+	1    4550 5750
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad MK4
+U 1 1 5BE0FFBE
+P 4550 5950
+F 0 "MK4" V 4504 6100 50  0000 L CNN
+F 1 "MountingHole_Pad" V 4595 6100 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_Pad" H 4550 5950 50  0001 C CNN
+F 3 "~" H 4550 5950 50  0001 C CNN
+	1    4550 5950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4450 5350 4450 5550
+Connection ~ 4450 5550
+Wire Wire Line
+	4450 5550 4450 5750
+Connection ~ 4450 5750
+Wire Wire Line
+	4450 5750 4450 5950
+Connection ~ 4450 5950
+Wire Wire Line
+	4450 5950 4450 6100
+$Comp
+L power:GND #PWR0168
+U 1 1 5BE12036
+P 4450 6100
+F 0 "#PWR0168" H 4450 5850 50  0001 C CNN
+F 1 "GND" H 4455 5927 50  0000 C CNN
+F 2 "" H 4450 6100 50  0001 C CNN
+F 3 "" H 4450 6100 50  0001 C CNN
+	1    4450 6100
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
