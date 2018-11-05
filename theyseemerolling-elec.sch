@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:theyseemerolling-elec-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -318,7 +317,7 @@ U 1 1 5BB5F5FE
 P 9650 3650
 F 0 "C19" H 9765 3696 50  0000 L CNN
 F 1 "100nF" H 9765 3605 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.33x1.40mm_HandSolder" H 9688 3500 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9688 3500 50  0001 C CNN
 F 3 "~" H 9650 3650 50  0001 C CNN
 	1    9650 3650
 	1    0    0    -1  
@@ -329,7 +328,7 @@ U 1 1 5BB5F6CF
 P 9400 4150
 F 0 "C18" H 9515 4196 50  0000 L CNN
 F 1 "100nF" H 9515 4105 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.33x1.40mm_HandSolder" H 9438 4000 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9438 4000 50  0001 C CNN
 F 3 "~" H 9400 4150 50  0001 C CNN
 	1    9400 4150
 	1    0    0    -1  
