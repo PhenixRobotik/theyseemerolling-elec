@@ -395,7 +395,7 @@ U 1 1 5BB52377
 P 7300 5300
 F 0 "LOGO2" H 7300 5575 50  0001 C CNN
 F 1 "Logo_Open_Hardware_Small" H 7300 5075 50  0001 C CNN
-F 2 "PhoenixRobotik:Logo_14,5mm" H 7300 5300 50  0001 C CNN
+F 2 "PhenixRobotik:Logo_14,5mm" H 7300 5300 50  0001 C CNN
 F 3 "~" H 7300 5300 50  0001 C CNN
 	1    7300 5300
 	1    0    0    -1  

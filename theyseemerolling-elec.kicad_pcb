@@ -2082,7 +2082,7 @@
     )
   )
 
-  (module PhoenixRobotik:Logo_14,5mm (layer F.Cu) (tedit 0) (tstamp 5BC1DF76)
+  (module PhenixRobotik:Logo_14,5mm (layer F.Cu) (tedit 0) (tstamp 5BC1DF76)
     (at 158.6 60.2)
     (descr https://github.com/PhenixRobotik)
     (tags Logo)
