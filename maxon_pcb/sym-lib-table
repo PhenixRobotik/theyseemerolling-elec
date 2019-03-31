@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name Maxon)(type Legacy)(uri ${KIPRJMOD}/Maxon.lib)(options "")(descr ""))
+)

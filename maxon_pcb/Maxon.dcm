@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP Motor_DC_GND
+D DC Motor, alternative symbol
+K DC Motor
+F ~
+$ENDCMP
+#
+#End Doc Library
