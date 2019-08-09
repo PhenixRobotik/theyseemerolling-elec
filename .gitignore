@@ -1,5 +1,7 @@
 # For PCBs designed using KiCad: http://www.kicad-pcb.org/
 
+gerber/
+
 # Temporary files
 *.000
 *.bak
@@ -12,6 +14,7 @@ _autosave-*
 *-rescue.lib
 *-save.pro
 *-save.kicad_pcb
+fp-info-cache
 
 # Netlist files (exported from Eeschema)
 *.net

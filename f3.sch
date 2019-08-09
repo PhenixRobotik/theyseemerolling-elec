@@ -1,10 +1,9 @@
 EESchema Schematic File Version 4
-LIBS:theyseemerolling-elec-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 5
+Sheet 3 10
 Title ""
 Date ""
 Rev ""
@@ -535,15 +534,13 @@ Text Label 5950 2450 0    50   ~ 0
 EN_A_and_NRST
 Text Label 5950 2650 0    50   ~ 0
 EN_B_and_NRST
-Text Notes 7250 1600 0    50   ~ 0
-TIM_3_CH_CH4 for PWM
-Text HLabel 9450 2950 2    50   Input ~ 0
+Text HLabel 5950 2950 2    50   Input ~ 0
 Encoder_1_B
-Text HLabel 9450 2850 2    50   Input ~ 0
+Text HLabel 5950 2850 2    50   Input ~ 0
 Encoder_1_A
-Text HLabel 8100 2050 2    50   Input ~ 0
+Text HLabel 5950 2050 2    50   Input ~ 0
 Encoder_2_B
-Text HLabel 8100 2150 2    50   Input ~ 0
+Text HLabel 5950 2150 2    50   Input ~ 0
 Encoder_2_A
 Text Notes 6500 2950 0    50   ~ 0
 TIM1 Encoder mode
@@ -596,8 +593,6 @@ Wire Wire Line
 	4150 2650 4200 2650
 Wire Wire Line
 	4500 2650 4850 2650
-Text Notes 6500 2150 0    50   ~ 0
-TIM2 Encoder mode
 Text Notes 4200 3000 2    50   ~ 0
 ADC_2 IN-1 IN-2
 Text HLabel 4750 2750 0    50   Input ~ 0
@@ -753,204 +748,6 @@ F 3 "" H 9650 6000 50  0001 C CNN
 	1    9650 6000
 	-1   0    0    -1  
 $EndComp
-$Comp
-L Transistor_FET:BSS138 Q2
-U 1 1 5BBED422
-P 7500 1950
-F 0 "Q2" V 7300 2200 50  0000 C CNN
-F 1 "BSS138" V 7400 2200 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 7700 1875 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 7500 1950 50  0001 L CNN
-	1    7500 1950
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	7300 2050 6950 2050
-$Comp
-L power:+3.3V #PWR0164
-U 1 1 5BBEF030
-P 6950 1600
-F 0 "#PWR0164" H 6950 1450 50  0001 C CNN
-F 1 "+3.3V" H 6965 1773 50  0000 C CNN
-F 2 "" H 6950 1600 50  0001 C CNN
-F 3 "" H 6950 1600 50  0001 C CNN
-	1    6950 1600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R18
-U 1 1 5BBEF0B2
-P 6950 1850
-F 0 "R18" H 7020 1896 50  0000 L CNN
-F 1 "R" H 7020 1805 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6880 1850 50  0001 C CNN
-F 3 "~" H 6950 1850 50  0001 C CNN
-	1    6950 1850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6950 1600 6950 1650
-Wire Wire Line
-	6950 1650 7500 1650
-Wire Wire Line
-	7500 1650 7500 1750
-Connection ~ 6950 1650
-Wire Wire Line
-	6950 1650 6950 1700
-Wire Wire Line
-	6950 2000 6950 2050
-Connection ~ 6950 2050
-Wire Wire Line
-	6950 2050 5950 2050
-Wire Wire Line
-	7700 2050 8100 2050
-Text Notes 8050 1950 0    50   ~ 0
-pull-up on encoder
-$Comp
-L Transistor_FET:BSS138 Q3
-U 1 1 5BBF6859
-P 7800 2250
-F 0 "Q3" V 7600 2500 50  0000 C CNN
-F 1 "BSS138" V 7700 2500 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 8000 2175 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 7800 2250 50  0001 L CNN
-	1    7800 2250
-	0    1    -1   0   
-$EndComp
-Wire Wire Line
-	8100 2150 8000 2150
-Wire Wire Line
-	7600 2150 7450 2150
-$Comp
-L Device:R R19
-U 1 1 5BBFA8BC
-P 7450 2400
-F 0 "R19" H 7520 2446 50  0000 L CNN
-F 1 "R" H 7520 2355 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7380 2400 50  0001 C CNN
-F 3 "~" H 7450 2400 50  0001 C CNN
-	1    7450 2400
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR0165
-U 1 1 5BBFA94E
-P 7800 2550
-F 0 "#PWR0165" H 7800 2400 50  0001 C CNN
-F 1 "+3.3V" V 7815 2678 50  0000 L CNN
-F 2 "" H 7800 2550 50  0001 C CNN
-F 3 "" H 7800 2550 50  0001 C CNN
-	1    7800 2550
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	7800 2550 7800 2450
-Wire Wire Line
-	7800 2550 7450 2550
-Connection ~ 7800 2550
-Wire Wire Line
-	7450 2250 7450 2150
-Connection ~ 7450 2150
-Wire Wire Line
-	7450 2150 5950 2150
-$Comp
-L Transistor_FET:BSS138 Q4
-U 1 1 5BC04989
-P 8850 2750
-F 0 "Q4" V 8650 3000 50  0000 C CNN
-F 1 "BSS138" V 8750 3000 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 9050 2675 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 8850 2750 50  0001 L CNN
-	1    8850 2750
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	8650 2850 8300 2850
-$Comp
-L power:+3.3V #PWR0166
-U 1 1 5BC04991
-P 8300 2400
-F 0 "#PWR0166" H 8300 2250 50  0001 C CNN
-F 1 "+3.3V" H 8315 2573 50  0000 C CNN
-F 2 "" H 8300 2400 50  0001 C CNN
-F 3 "" H 8300 2400 50  0001 C CNN
-	1    8300 2400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R20
-U 1 1 5BC04997
-P 8300 2650
-F 0 "R20" H 8370 2696 50  0000 L CNN
-F 1 "R" H 8370 2605 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8230 2650 50  0001 C CNN
-F 3 "~" H 8300 2650 50  0001 C CNN
-	1    8300 2650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8300 2400 8300 2450
-Wire Wire Line
-	8300 2450 8850 2450
-Wire Wire Line
-	8850 2450 8850 2550
-Connection ~ 8300 2450
-Wire Wire Line
-	8300 2450 8300 2500
-Wire Wire Line
-	8300 2800 8300 2850
-Connection ~ 8300 2850
-Wire Wire Line
-	9050 2850 9450 2850
-$Comp
-L Transistor_FET:BSS138 Q5
-U 1 1 5BC049A7
-P 9150 3050
-F 0 "Q5" V 8950 3300 50  0000 C CNN
-F 1 "BSS138" V 9050 3300 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 9350 2975 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 9150 3050 50  0001 L CNN
-	1    9150 3050
-	0    1    -1   0   
-$EndComp
-Wire Wire Line
-	9450 2950 9350 2950
-Wire Wire Line
-	8950 2950 8800 2950
-$Comp
-L Device:R R21
-U 1 1 5BC049B0
-P 8800 3200
-F 0 "R21" H 8870 3246 50  0000 L CNN
-F 1 "R" H 8870 3155 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8730 3200 50  0001 C CNN
-F 3 "~" H 8800 3200 50  0001 C CNN
-	1    8800 3200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR0167
-U 1 1 5BC049B7
-P 9150 3350
-F 0 "#PWR0167" H 9150 3200 50  0001 C CNN
-F 1 "+3.3V" V 9165 3478 50  0000 L CNN
-F 2 "" H 9150 3350 50  0001 C CNN
-F 3 "" H 9150 3350 50  0001 C CNN
-	1    9150 3350
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	9150 3350 9150 3250
-Wire Wire Line
-	9150 3350 8800 3350
-Connection ~ 9150 3350
-Wire Wire Line
-	8800 3050 8800 2950
-Connection ~ 8800 2950
-Wire Wire Line
-	5950 2850 8300 2850
-Wire Wire Line
-	5950 2950 8800 2950
 Wire Wire Line
 	6650 4050 6650 3550
 Wire Wire Line
@@ -958,4 +755,6 @@ Wire Wire Line
 Wire Wire Line
 	6650 4050 6900 4050
 NoConn ~ 5950 3050
+Text Notes 6500 2150 0    50   ~ 0
+TIM2 Encoder mode
 $EndSCHEMATC
