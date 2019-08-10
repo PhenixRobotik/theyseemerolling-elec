@@ -1,9 +1,10 @@
 EESchema Schematic File Version 4
+LIBS:theyseemerolling-elec-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 9
+Sheet 2 11
 Title ""
 Date ""
 Rev ""
@@ -248,168 +249,18 @@ Wire Wire Line
 	6050 3200 8050 3200
 Wire Wire Line
 	6050 3100 8050 3100
-$Comp
-L power:+3.3V #PWR0128
-U 1 1 5B1E48FC
-P 9900 3850
-F 0 "#PWR0128" H 9900 3700 50  0001 C CNN
-F 1 "+3.3V" V 9915 3978 50  0000 L CNN
-F 2 "" H 9900 3850 50  0001 C CNN
-F 3 "" H 9900 3850 50  0001 C CNN
-	1    9900 3850
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR0129
-U 1 1 5B1E6763
-P 9350 4800
-F 0 "#PWR0129" H 9350 4550 50  0001 C CNN
-F 1 "GND" H 9355 4627 50  0000 C CNN
-F 2 "" H 9350 4800 50  0001 C CNN
-F 3 "" H 9350 4800 50  0001 C CNN
-	1    9350 4800
-	1    0    0    -1  
-$EndComp
-Text HLabel 8550 4500 0    50   Input ~ 0
+Text HLabel 8700 3900 0    50   Input ~ 0
 PowerGND
-Text HLabel 9950 4300 2    50   Input ~ 0
+Text HLabel 9400 3800 2    50   Input ~ 0
 Sense_B
-Wire Wire Line
-	6050 3800 8400 3800
-$Comp
-L power:+3.3V #PWR0130
-U 1 1 5B1EB34F
-P 10050 2550
-F 0 "#PWR0130" H 10050 2400 50  0001 C CNN
-F 1 "+3.3V" V 10065 2678 50  0000 L CNN
-F 2 "" H 10050 2550 50  0001 C CNN
-F 3 "" H 10050 2550 50  0001 C CNN
-	1    10050 2550
-	0    1    1    0   
-$EndComp
-Text HLabel 8800 3450 0    50   Input ~ 0
+Text HLabel 8700 3400 0    50   Input ~ 0
 PowerGND
-Text HLabel 10000 3100 2    50   Input ~ 0
-Sense_A
-$Comp
-L power:GND #PWR0131
-U 1 1 5B1EE9DD
-P 9500 3600
-F 0 "#PWR0131" H 9500 3350 50  0001 C CNN
-F 1 "GND" V 9505 3472 50  0000 R CNN
-F 2 "" H 9500 3600 50  0001 C CNN
-F 3 "" H 9500 3600 50  0001 C CNN
-	1    9500 3600
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Sensor_Current:ACS711xLCTR-12AB U4
-U 1 1 5B1EFDF7
-P 9400 3100
-F 0 "U4" H 9400 3678 50  0000 C CNN
-F 1 "ACS711xLCTR-12AB" H 9400 3587 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 9750 3050 50  0001 L CIN
-F 3 "http://www.allegromicro.com/~/Media/Files/Datasheets/ACS711-Datasheet.ashx" H 9400 3100 50  0001 C CNN
-	1    9400 3100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Sensor_Current:ACS711xLCTR-12AB U3
-U 1 1 5B1EFF44
-P 9350 4300
-F 0 "U3" H 9350 4878 50  0000 C CNN
-F 1 "ACS711xLCTR-12AB" H 9350 4787 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 9700 4250 50  0001 L CIN
-F 3 "http://www.allegromicro.com/~/Media/Files/Datasheets/ACS711-Datasheet.ashx" H 9350 4300 50  0001 C CNN
-	1    9350 4300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8950 4100 8400 4100
-Wire Wire Line
-	8400 4100 8400 3800
-Wire Wire Line
-	8550 4500 8950 4500
-Wire Wire Line
-	9350 4800 9350 4700
-Wire Wire Line
-	9750 4300 9950 4300
-$Comp
-L Device:R R5
-U 1 1 5B1F3137
-P 9850 4200
-F 0 "R5" H 9920 4246 50  0000 L CNN
-F 1 "10kR" H 9920 4155 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9780 4200 50  0001 C CNN
-F 3 "~" H 9850 4200 50  0001 C CNN
-	1    9850 4200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9350 3850 9800 3850
-Wire Wire Line
-	9850 3850 9850 4050
-Wire Wire Line
-	9350 3850 9350 3900
-Wire Wire Line
-	9850 4350 9850 4400
-Wire Wire Line
-	9850 4400 9750 4400
-Text HLabel 9950 4400 2    50   Input ~ 0
+Text HLabel 9400 3900 2    50   Input ~ 0
 Sense_B_Fault
-Wire Wire Line
-	9950 4400 9850 4400
-Connection ~ 9850 4400
-Wire Wire Line
-	9900 3850 9850 3850
-Connection ~ 9850 3850
-Wire Wire Line
-	9400 3500 9400 3600
-Wire Wire Line
-	9400 3600 9500 3600
-Wire Wire Line
-	9400 2700 9400 2550
-Wire Wire Line
-	9400 2550 9800 2550
-Wire Wire Line
-	9800 3100 10000 3100
-$Comp
-L Device:R R6
-U 1 1 5B1FA146
-P 9900 3000
-F 0 "R6" H 9970 3046 50  0000 L CNN
-F 1 "10kR" H 9970 2955 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9830 3000 50  0001 C CNN
-F 3 "~" H 9900 3000 50  0001 C CNN
-	1    9900 3000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9900 2850 9900 2550
-Connection ~ 9900 2550
-Wire Wire Line
-	9900 2550 10050 2550
-Wire Wire Line
-	9800 3200 9900 3200
-Wire Wire Line
-	9900 3200 9900 3150
-Text HLabel 10000 3200 2    50   Input ~ 0
+Text HLabel 9400 3400 2    50   Input ~ 0
 Sense_A_Fault
 Wire Wire Line
-	9900 3200 10000 3200
-Connection ~ 9900 3200
-Wire Wire Line
 	6050 3300 8700 3300
-Wire Wire Line
-	8700 3300 8700 2900
-Wire Wire Line
-	8700 2900 9000 2900
-Wire Wire Line
-	8800 3450 8900 3450
-Wire Wire Line
-	8900 3450 8900 3300
-Wire Wire Line
-	8900 3300 9000 3300
 $Comp
 L power:GND #PWR0102
 U 1 1 5BAF5B2F
@@ -431,56 +282,6 @@ F 2 "" H 3950 3950 50  0001 C CNN
 F 3 "" H 3950 3950 50  0001 C CNN
 	1    3950 3950
 	0    1    1    0   
-$EndComp
-$Comp
-L Device:C C20
-U 1 1 5BB5E554
-P 9800 2400
-F 0 "C20" H 9915 2446 50  0000 L CNN
-F 1 "100nF" H 9915 2355 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9838 2250 50  0001 C CNN
-F 3 "~" H 9800 2400 50  0001 C CNN
-	1    9800 2400
-	1    0    0    -1  
-$EndComp
-Connection ~ 9800 2550
-Wire Wire Line
-	9800 2550 9900 2550
-$Comp
-L Device:C C21
-U 1 1 5BB5E695
-P 9800 3700
-F 0 "C21" H 9915 3746 50  0000 L CNN
-F 1 "100nF" H 9915 3655 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9838 3550 50  0001 C CNN
-F 3 "~" H 9800 3700 50  0001 C CNN
-	1    9800 3700
-	1    0    0    -1  
-$EndComp
-Connection ~ 9800 3850
-Wire Wire Line
-	9800 3850 9850 3850
-$Comp
-L power:GND #PWR0159
-U 1 1 5BB5E7D3
-P 9800 3550
-F 0 "#PWR0159" H 9800 3300 50  0001 C CNN
-F 1 "GND" V 9805 3422 50  0000 R CNN
-F 2 "" H 9800 3550 50  0001 C CNN
-F 3 "" H 9800 3550 50  0001 C CNN
-	1    9800 3550
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:GND #PWR0160
-U 1 1 5BB5E838
-P 9800 2250
-F 0 "#PWR0160" H 9800 2000 50  0001 C CNN
-F 1 "GND" V 9805 2122 50  0000 R CNN
-F 2 "" H 9800 2250 50  0001 C CNN
-F 3 "" H 9800 2250 50  0001 C CNN
-	1    9800 2250
-	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	4250 3500 4600 3500
@@ -535,4 +336,81 @@ Wire Wire Line
 Connection ~ 4300 2700
 Wire Wire Line
 	4300 2700 3950 2700
+Wire Wire Line
+	13850 3250 13550 3250
+Text Label 13550 3250 0    50   ~ 0
+Sense_A
+Text Label 14850 3250 2    50   ~ 0
+Sense_A_Filtered
+$Comp
+L power:GND #PWR?
+U 1 1 5D51972A
+P 14250 3550
+AR Path="/5B1D328B/5D51972A" Ref="#PWR?"  Part="1" 
+AR Path="/5D51972A" Ref="#PWR?"  Part="1" 
+AR Path="/5B06B79D/5D51972A" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 14250 3300 50  0001 C CNN
+F 1 "GND" H 14255 3377 50  0000 C CNN
+F 2 "" H 14250 3550 50  0001 C CNN
+F 3 "" H 14250 3550 50  0001 C CNN
+	1    14250 3550
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	14850 3250 14250 3250
+Wire Wire Line
+	14250 3250 14150 3250
+Connection ~ 14250 3250
+$Comp
+L Device:C C?
+U 1 1 5D519733
+P 14250 3400
+AR Path="/5B1D328B/5D519733" Ref="C?"  Part="1" 
+AR Path="/5D519733" Ref="C?"  Part="1" 
+AR Path="/5B06B79D/5D519733" Ref="C?"  Part="1" 
+F 0 "C?" H 14250 3300 50  0000 L CNN
+F 1 "1n" H 14150 3300 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 14288 3250 50  0001 C CNN
+F 3 "~" H 14250 3400 50  0001 C CNN
+	1    14250 3400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D519739
+P 14000 3250
+AR Path="/5B1D328B/5D519739" Ref="R?"  Part="1" 
+AR Path="/5D519739" Ref="R?"  Part="1" 
+AR Path="/5B06B79D/5D519739" Ref="R11"  Part="1" 
+F 0 "R11" V 13900 3250 50  0000 C CNN
+F 1 "Rsense" V 14000 3250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 13930 3250 50  0001 C CNN
+F 3 "~" H 14000 3250 50  0001 C CNN
+	1    14000 3250
+	0    -1   1    0   
+$EndComp
+Text HLabel 9400 3300 2    50   Input ~ 0
+Sense_A
+$Sheet
+S 8700 3200 700  300 
+U 5D536197
+F0 "Sheet5D536196" 50
+F1 "measure_current.sch" 50
+F2 "Output" I L 8700 3400 50 
+F3 "Fault" I R 9400 3400 50 
+F4 "Input" I L 8700 3300 50 
+F5 "Sense" I R 9400 3300 50 
+$EndSheet
+$Sheet
+S 8700 3700 700  300 
+U 5D55A35B
+F0 "sheet5D55A35B" 50
+F1 "measure_current.sch" 50
+F2 "Output" I L 8700 3900 50 
+F3 "Fault" I R 9400 3900 50 
+F4 "Input" I L 8700 3800 50 
+F5 "Sense" I R 9400 3800 50 
+$EndSheet
+Wire Wire Line
+	6050 3800 8700 3800
 $EndSCHEMATC

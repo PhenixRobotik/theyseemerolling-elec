@@ -1,9 +1,10 @@
 EESchema Schematic File Version 4
+LIBS:theyseemerolling-elec-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 9
+Sheet 1 11
 Title ""
 Date ""
 Rev ""
@@ -378,122 +379,6 @@ Wire Wire Line
 	10650 2050 10750 2050
 Wire Wire Line
 	10750 2150 10650 2150
-$Comp
-L Device:R R?
-U 1 1 5D56D260
-P 9050 1400
-AR Path="/5B1D328B/5D56D260" Ref="R?"  Part="1" 
-AR Path="/5D56D260" Ref="R12"  Part="1" 
-F 0 "R12" V 8950 1400 50  0000 C CNN
-F 1 "Rsense" V 9050 1400 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8980 1400 50  0001 C CNN
-F 3 "~" H 9050 1400 50  0001 C CNN
-	1    9050 1400
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 5D56D26A
-P 8800 1550
-AR Path="/5B1D328B/5D56D26A" Ref="C?"  Part="1" 
-AR Path="/5D56D26A" Ref="C29"  Part="1" 
-F 0 "C29" H 8800 1450 50  0000 L CNN
-F 1 "1n" H 8700 1450 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8838 1400 50  0001 C CNN
-F 3 "~" H 8800 1550 50  0001 C CNN
-	1    8800 1550
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5D56D274
-P 8800 1700
-AR Path="/5B1D328B/5D56D274" Ref="#PWR?"  Part="1" 
-AR Path="/5D56D274" Ref="#PWR010"  Part="1" 
-F 0 "#PWR010" H 8800 1450 50  0001 C CNN
-F 1 "GND" H 8805 1527 50  0000 C CNN
-F 2 "" H 8800 1700 50  0001 C CNN
-F 3 "" H 8800 1700 50  0001 C CNN
-	1    8800 1700
-	1    0    0    -1  
-$EndComp
-Text Label 8200 1400 0    50   ~ 0
-Sense_B_Filtered
-Text Label 9500 1400 2    50   ~ 0
-Sense_B
-Wire Wire Line
-	9200 1400 9500 1400
-Connection ~ 8800 1400
-Wire Wire Line
-	8800 1400 8900 1400
-Wire Wire Line
-	8200 1400 8800 1400
-$Comp
-L Device:R R?
-U 1 1 5D581ED7
-P 7550 1400
-AR Path="/5B1D328B/5D581ED7" Ref="R?"  Part="1" 
-AR Path="/5D581ED7" Ref="R11"  Part="1" 
-F 0 "R11" V 7450 1400 50  0000 C CNN
-F 1 "Rsense" V 7550 1400 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7480 1400 50  0001 C CNN
-F 3 "~" H 7550 1400 50  0001 C CNN
-	1    7550 1400
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 5D581EE1
-P 7300 1550
-AR Path="/5B1D328B/5D581EE1" Ref="C?"  Part="1" 
-AR Path="/5D581EE1" Ref="C23"  Part="1" 
-F 0 "C23" H 7300 1450 50  0000 L CNN
-F 1 "1n" H 7200 1450 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7338 1400 50  0001 C CNN
-F 3 "~" H 7300 1550 50  0001 C CNN
-	1    7300 1550
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5D581EEB
-P 7300 1700
-AR Path="/5B1D328B/5D581EEB" Ref="#PWR?"  Part="1" 
-AR Path="/5D581EEB" Ref="#PWR09"  Part="1" 
-F 0 "#PWR09" H 7300 1450 50  0001 C CNN
-F 1 "GND" H 7305 1527 50  0000 C CNN
-F 2 "" H 7300 1700 50  0001 C CNN
-F 3 "" H 7300 1700 50  0001 C CNN
-	1    7300 1700
-	1    0    0    -1  
-$EndComp
-Text Label 6700 1400 0    50   ~ 0
-Sense_A_Filtered
-Text Label 8000 1400 2    50   ~ 0
-Sense_A
-Wire Wire Line
-	7700 1400 8000 1400
-Connection ~ 7300 1400
-Wire Wire Line
-	7300 1400 7400 1400
-Wire Wire Line
-	6700 1400 7300 1400
-Text Label 9550 2250 2    50   ~ 0
-Sense_A
-Wire Wire Line
-	9550 2250 9650 2250
-Wire Wire Line
-	6250 2250 6350 2250
-Wire Wire Line
-	6250 2800 6350 2800
-Wire Wire Line
-	9650 2800 9550 2800
-Text Label 9550 2800 2    50   ~ 0
-Sense_B
-Text Label 6350 2800 0    50   ~ 0
-Sense_B_Filtered
-Text Label 6350 2250 0    50   ~ 0
-Sense_A_Filtered
 Wire Wire Line
 	6250 1950 9650 1950
 Wire Wire Line
@@ -917,4 +802,8 @@ F 3 "" H 3850 7400 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	850  5450 1100 5450
+Wire Wire Line
+	6250 2250 9650 2250
+Wire Wire Line
+	6250 2800 9650 2800
 $EndSCHEMATC
