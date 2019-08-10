@@ -1,9 +1,10 @@
 EESchema Schematic File Version 4
+LIBS:theyseemerolling-elec-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 10
+Sheet 4 9
 Title ""
 Date ""
 Rev ""
@@ -190,8 +191,8 @@ L Device:C C?
 U 1 1 5BAEB6A6
 P 4500 4400
 AR Path="/5B1D7C42/5BAEB6A6" Ref="C?"  Part="1" 
-AR Path="/5B230D4C/5BAEB6A6" Ref="C5"  Part="1" 
-F 0 "C5" H 4615 4446 50  0000 L CNN
+AR Path="/5B230D4C/5BAEB6A6" Ref="C22"  Part="1" 
+F 0 "C22" H 4615 4446 50  0000 L CNN
 F 1 "100n" H 4615 4355 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4538 4250 50  0001 C CNN
 F 3 "~" H 4500 4400 50  0001 C CNN
@@ -312,8 +313,8 @@ L Device:C C?
 U 1 1 5BAEB6F7
 P 6600 4400
 AR Path="/5B1D7C42/5BAEB6F7" Ref="C?"  Part="1" 
-AR Path="/5B230D4C/5BAEB6F7" Ref="C7"  Part="1" 
-F 0 "C7" H 6715 4446 50  0000 L CNN
+AR Path="/5B230D4C/5BAEB6F7" Ref="C36"  Part="1" 
+F 0 "C36" H 6715 4446 50  0000 L CNN
 F 1 "100n" H 6715 4355 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6638 4250 50  0001 C CNN
 F 3 "~" H 6600 4400 50  0001 C CNN
@@ -437,10 +438,10 @@ Le MCP2551 a un pull-up interne sur TX
 Wire Wire Line
 	6600 4050 7050 4050
 $Comp
-L Device:CP C10
+L Device:CP C32
 U 1 1 5BC7F1D6
 P 6050 4400
-F 0 "C10" H 6168 4446 50  0000 L CNN
+F 0 "C32" H 6168 4446 50  0000 L CNN
 F 1 "10u" H 6168 4355 50  0000 L CNN
 F 2 "Capacitor_SMD:CP_Elec_4x5.4" H 6088 4250 50  0001 C CNN
 F 3 "~" H 6050 4400 50  0001 C CNN

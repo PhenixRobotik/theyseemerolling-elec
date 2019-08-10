@@ -1,9 +1,10 @@
 EESchema Schematic File Version 4
+LIBS:theyseemerolling-elec-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 10
+Sheet 3 9
 Title ""
 Date ""
 Rev ""
@@ -14,10 +15,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Device:C C6
+L Device:C C17
 U 1 1 5B1DBC23
 P 4900 4300
-F 0 "C6" H 5015 4346 50  0000 L CNN
+F 0 "C17" H 5015 4346 50  0000 L CNN
 F 1 "C" H 5015 4255 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4938 4150 50  0001 C CNN
 F 3 "~" H 4900 4300 50  0001 C CNN

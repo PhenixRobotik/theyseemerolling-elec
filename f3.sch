@@ -1,9 +1,10 @@
 EESchema Schematic File Version 4
+LIBS:theyseemerolling-elec-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 10
+Sheet 9 10
 Title ""
 Date ""
 Rev ""
@@ -194,12 +195,6 @@ Wire Wire Line
 	3650 2250 4850 2250
 Wire Wire Line
 	3100 2250 3350 2250
-Text HLabel 5950 3350 2    50   Input ~ 0
-TMS
-Text HLabel 5950 3450 2    50   Input ~ 0
-TCK
-Text HLabel 4250 2050 0    50   Input ~ 0
-nrst
 Wire Wire Line
 	4250 2050 4400 2050
 $Comp
@@ -245,11 +240,11 @@ Text HLabel 5950 2550 2    50   Input ~ 0
 IN2_B
 Text HLabel 10250 4400 2    50   Input ~ 0
 EN_B
-Text HLabel 6100 6500 2    50   Input ~ 0
+Text HLabel 4850 3050 0    50   Input ~ 0
 Sense_A
 Text HLabel 6000 3750 2    50   Input ~ 0
 Sense_A_Fault
-Text HLabel 4000 6500 2    50   Input ~ 0
+Text HLabel 4850 2950 0    50   Input ~ 0
 Sense_B
 Text HLabel 6000 3850 2    50   Input ~ 0
 Sense_B_Fault
@@ -430,106 +425,8 @@ Text Label 8300 4500 0    50   ~ 0
 EN_B_and_NRST
 Wire Wire Line
 	8300 4500 8800 4500
-$Comp
-L Device:C C9
-U 1 1 5B202742
-P 5350 6700
-F 0 "C9" H 5465 6746 50  0000 L CNN
-F 1 "1n" H 5465 6655 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5388 6550 50  0001 C CNN
-F 3 "~" H 5350 6700 50  0001 C CNN
-	1    5350 6700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R14
-U 1 1 5B20325C
-P 5600 6500
-F 0 "R14" V 5393 6500 50  0000 C CNN
-F 1 "R_Sense" V 5484 6500 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5530 6500 50  0001 C CNN
-F 3 "~" H 5600 6500 50  0001 C CNN
-	1    5600 6500
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R12
-U 1 1 5B203339
-P 3700 6500
-F 0 "R12" V 3493 6500 50  0000 C CNN
-F 1 "R_Sense" V 3584 6500 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3630 6500 50  0001 C CNN
-F 3 "~" H 3700 6500 50  0001 C CNN
-	1    3700 6500
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:C C8
-U 1 1 5B203391
-P 3450 6700
-F 0 "C8" H 3565 6746 50  0000 L CNN
-F 1 "1n" H 3565 6655 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3488 6550 50  0001 C CNN
-F 3 "~" H 3450 6700 50  0001 C CNN
-	1    3450 6700
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0136
-U 1 1 5B2046C3
-P 5350 6900
-F 0 "#PWR0136" H 5350 6650 50  0001 C CNN
-F 1 "GND" H 5355 6727 50  0000 C CNN
-F 2 "" H 5350 6900 50  0001 C CNN
-F 3 "" H 5350 6900 50  0001 C CNN
-	1    5350 6900
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0137
-U 1 1 5B2046F9
-P 3450 6900
-F 0 "#PWR0137" H 3450 6650 50  0001 C CNN
-F 1 "GND" H 3455 6727 50  0000 C CNN
-F 2 "" H 3450 6900 50  0001 C CNN
-F 3 "" H 3450 6900 50  0001 C CNN
-	1    3450 6900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5350 6550 5350 6500
-Wire Wire Line
-	5350 6500 5450 6500
-Wire Wire Line
-	5750 6500 6100 6500
-Wire Wire Line
-	5350 6900 5350 6850
-Wire Wire Line
-	3450 6900 3450 6850
-Wire Wire Line
-	3450 6550 3450 6500
-Wire Wire Line
-	3450 6500 3550 6500
-Wire Wire Line
-	3850 6500 4000 6500
-Text Label 2800 6500 0    50   ~ 0
-Sense_B_Filtered
-Text Label 4700 6500 0    50   ~ 0
-Sense_A_Filtered
-Wire Wire Line
-	5350 6500 4700 6500
-Connection ~ 5350 6500
-Wire Wire Line
-	3450 6500 2800 6500
-Connection ~ 3450 6500
-Text Notes 3650 6200 0    50   ~ 0
-Mesure filtering, intensity in dc motor->much noise
 Text Notes 8450 3450 0    50   ~ 0
 Stops the motors when reset and when MCU outputs are Z
-Text Label 4850 2950 2    50   ~ 0
-Sense_B_Filtered
-Text Label 4850 3050 2    50   ~ 0
-Sense_A_Filtered
 Text Label 5950 2450 0    50   ~ 0
 EN_A_and_NRST
 Text Label 5950 2650 0    50   ~ 0
@@ -550,10 +447,6 @@ Text HLabel 5950 3250 2    50   Input ~ 0
 CAN_TX
 Text HLabel 5950 3150 2    50   Input ~ 0
 CAN_RX
-Text HLabel 4850 3450 0    50   Input ~ 0
-TX_1
-Text HLabel 4850 3550 0    50   Input ~ 0
-RX_1
 $Comp
 L Device:R R13
 U 1 1 5B220C14
@@ -757,4 +650,54 @@ Wire Wire Line
 NoConn ~ 5950 3050
 Text Notes 6500 2150 0    50   ~ 0
 TIM2 Encoder mode
+$Comp
+L PhenixRobotik:Conn_Debug J?
+U 1 1 5D5CB2A9
+P 1950 4300
+AR Path="/5D5CB2A9" Ref="J?"  Part="1" 
+AR Path="/5B1D328B/5D5CB2A9" Ref="J?"  Part="1" 
+F 0 "J?" H 1950 4300 50  0000 C CNN
+F 1 "Conn_SWD_UART" H 1950 4850 50  0000 C CNN
+F 2 "Connector_JST:JST_PH_B6B-PH-K_1x06_P2.00mm_Vertical" H 1950 4300 50  0001 C CNN
+F 3 "~" H 1950 4300 50  0001 C CNN
+	1    1950 4300
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D5CB2AF
+P 1950 3600
+AR Path="/5D5CB2AF" Ref="#PWR?"  Part="1" 
+AR Path="/5B1D328B/5D5CB2AF" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1950 3350 50  0001 C CNN
+F 1 "GND" H 1955 3427 50  0000 C CNN
+F 2 "" H 1950 3600 50  0001 C CNN
+F 3 "" H 1950 3600 50  0001 C CNN
+	1    1950 3600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1950 3600 1950 3700
+Wire Wire Line
+	2250 4700 2550 4700
+Text Label 4250 2050 0    50   ~ 0
+nrst
+Text Label 2550 4700 2    50   ~ 0
+nrst
+Text Label 4850 3450 2    50   ~ 0
+TX_1
+Text Label 4850 3550 2    50   ~ 0
+RX_1
+Text Label 2250 4100 0    50   ~ 0
+TX_1
+Text Label 2250 4200 0    50   ~ 0
+RX_1
+Text Label 5950 3350 0    50   ~ 0
+SWDIO
+Text Label 5950 3450 0    50   ~ 0
+SWCLK
+Text Label 2250 4400 0    50   ~ 0
+SWDIO
+Text Label 2250 4500 0    50   ~ 0
+SWCLK
 $EndSCHEMATC
